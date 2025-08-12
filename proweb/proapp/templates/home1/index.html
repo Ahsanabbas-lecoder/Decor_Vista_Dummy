@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from uicamp.smartinnovates.net/i/gactur-html/home1/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Aug 2025 08:02:54 GMT -->
+<head>
+    {% load static %}
+    <!-- Metas -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="HTML5 Template Gactur Multi-Purpose themeforest">
+    <meta name="description" content="Gactur - Multi-Purpose HTML5 Template">
+    <meta name="author" content="">
+
+    <!-- Title  -->
+    <title>Gactur</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{% static 'assets/img/fav.png' %}" title="Favicon" sizes="16x16">
+
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="{% static 'common/assets/css/lib/bootstrap.min.css' %}">
+
+    <!-- font family -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+
+    <!-- fontawesome icons  -->
+    <link rel="stylesheet" href="{% static 'common/assets/css/lib/all.css' %}">
+    <!-- animate css  -->
+    <link rel="stylesheet" href="{% static 'common/assets/css/lib/animate.css' %}">
+    <!-- fancybox popup  -->
+    <link rel="stylesheet" href="{% static 'common/assets/css/lib/jquery.fancybox.css' %}">
+    <!-- lity popup  -->
+    <link rel="stylesheet" href="{% static 'common/assets/css/lib/lity.css' %}">
+    <!-- swiper slider  -->
+    <link rel="stylesheet" href="{% static 'common/assets/css/lib/swiper8.min.css' %}">
+
+    <!-- common style -->
+    <link rel="stylesheet" href="{% static 'common/assets/css/common_style.css' %}">
+
+    <!-- style -->
+    <link rel="stylesheet" href="{% static 'common/assets/css/style.css' %}">
+
+</head>
+
+<body class="home-st1 dark-theme">
+
+    <div class="lines"><span></span><span></span><span></span><span></span><span></span></div>
+
+
+    <!--  Start sidemenu  -->
+    <div class="tc-sidemenu-st1">
+        <div class="main-links">
+            <ul>
+                <li> <a href="{% static 'home1/index.html' %}" class="main-link"> Home one </a> </li>
+                <li><a href="../home2/index.html" class="main-link"> home two </a></li>
+                <li><a href="../home3/index.html" class="main-link"> home three </a></li>
+                <li><a href="../home4/index.html" class="main-link"> home four </a></li>
+                <li><a href="../home5/index.html" class="main-link"> home five </a></li>
+            </ul>
+        </div>
+        <div class="social-links">
+            <ul>
+                <li> <a href="#"> Facebook </a> </li>
+                <li> <a href="#"> twitter </a> </li>
+                <li> <a href="#"> instagram </a> </li>
+                <li> <a href="#"> Linkedin </a> </li>
+            </ul>
+        </div>
+        <span class="white-line"></span>
+        <img src="../common/assets/img/contact.png" alt="" class="cube img-cover">
+        <span class="clss"> <i class="fal fa-times"></i> </span>
+        <img src="../common/assets/img/logo_wh.svg" alt="" class="logo">
+    </div>
+    <!--  End sidemenu  -->
+
+    <!--  start cursor  -->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+    <!--  end cursor  -->
+
+    <!-- ====== Start Loading ====== -->
+
+    <div class="loader-wrap">
+        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+            <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+        </svg>
+
+        <div class="loader-wrap-heading">
+            <div class="load-text">
+                <span>L</span>
+                <span>o</span>
+                <span>a</span>
+                <span>d</span>
+                <span>i</span>
+                <span>n</span>
+                <span>g</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="scrollsmoother-container" class="scrollsmoother-container">
+
+
+        <!--  Start navbar  -->
+        <nav class="navbar navbar-expand-lg tc-navbar-st1 navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand me-lg-5" href="#">
+                    <img src="assets/img/logo_wh.svg" alt="" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-lg-5 ps-lg-5 me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="index.html">Home 1 dark</a></li>
+                                <li><a class="dropdown-item" href="index-light.html">Home 1 light</a></li>
+                                <li><a class="dropdown-item" href="../home2/index.html">Home 2 dark</a></li>
+                                <li><a class="dropdown-item" href="../home2/index-light.html">Home 2 light</a></li>
+                                <li><a class="dropdown-item" href="../home3/index.html">Home 3 dark</a></li>
+                                <li><a class="dropdown-item" href="../home3/index-light.html">Home 3 light</a></li>
+                                <li><a class="dropdown-item" href="../home4/index.html">Home 4 dark</a></li>
+                                <li><a class="dropdown-item" href="../home4/index-light.html">Home 4 light</a></li>
+                                <li><a class="dropdown-item" href="../home5/index.html">Home 5 dark</a></li>
+                                <li><a class="dropdown-item" href="../home5/index-light.html">Home 5 light</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Page
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../innerpages/about.html">about dark</a></li>
+                                <li><a class="dropdown-item" href="../innerpages/about-light.html">about light</a></li>
+                                <li><a class="dropdown-item" href="../innerpages/blog.html">blog dark</a></li>
+                                <li><a class="dropdown-item" href="../innerpages/blog-light.html">blog light</a></li>
+                                <li><a class="dropdown-item" href="../innerpages/blog_aside.html">blog aside dark</a></li>
+                                <li><a class="dropdown-item" href="../innerpages/blog_aside-light.html">blog aside light</a></li>
+                                <li><a class="dropdown-item" href="../innerpages/blog_det.html">blog details dark</a></li>
+                                <li><a class="dropdown-item" href="../innerpages/blog_det-light.html">blog details light</a></li>
+                                <li><a class="dropdown-item" href="../innerpages/contact.html">contact dark</a></li>
+                                <li><a class="dropdown-item" href="../innerpages/contact-light.html">contact light</a></li>
+                                <li><a class="dropdown-item" href="../innerpages/faq.html">faq dark</a></li>
+                                <li><a class="dropdown-item" href="../innerpages/faq-light.html">faq light</a></li>
+                                <li><a class="dropdown-item" href="../innerpages/project_det.html">project details dark</a></li>
+                                <li><a class="dropdown-item" href="../innerpages/project_det-light.html">project details light</a></li>
+                                <li><a class="dropdown-item" href="../innerpages/projects.html">projects dark</a></li>
+                                <li><a class="dropdown-item" href="../innerpages/projects-light.html">projects light</a></li>
+                                <li><a class="dropdown-item" href="../innerpages/projects2.html">projects 2 dark</a></li>
+                                <li><a class="dropdown-item" href="../innerpages/projects2-light.html">projects 2 light</a></li>
+                                <li><a class="dropdown-item" href="../innerpages/service_det.html">services details dark</a></li>
+                                <li><a class="dropdown-item" href="../innerpages/service_det-light.html">services details light</a></li>
+                                <li><a class="dropdown-item" href="../innerpages/services.html">services dark</a></li>
+                                <li><a class="dropdown-item" href="../innerpages/services-light.html">services light</a></li>
+                                <li><a class="dropdown-item" href="../innerpages/services2.html">services 2 dark</a></li>
+                                <li><a class="dropdown-item" href="../innerpages/services2-light.html">services 2 light</a></li>
+                                <li><a class="dropdown-item" href="../innerpages/team.html">team dark</a></li>
+                                <li><a class="dropdown-item" href="../innerpages/team-light.html">team light</a></li>
+                                <li><a class="dropdown-item" href="../innerpages/testimonials.html">testimonials dark</a></li>
+                                <li><a class="dropdown-item" href="../innerpages/testimonials-light.html">testimonials light</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../innerpages/projects.html">Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../innerpages/blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../innerpages/contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'signup'%}">Signup</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'login'%}">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'logout'%}">Logout</a>
+                        </li>
+                    </ul>
+                    <div class="nav-side d-flex align-items-center">
+                        <a href="#" class="contact-item d-flex align-items-center">
+                            <span class="icon fsz-30 me-20 flex-shrink-0 op-8 mt-1"> <i class="fat fa-phone-plus"></i> </span>
+                            <div class="cont">
+                                <div class="text fsz-16 op-8 fw-200"> Call us Phone </div>
+                                <h6 class="fsz-20 fw-300"> (808) 555-0111 </h6>
+                            </div>
+                        </a>
+                        <a href="#" class="sidemenu-toggle menu-toggle-btn"> <i class="fat fa-bars-staggered"></i> </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--  End navbar  -->
+
+        
+        <!--  Start header  -->
+        <header class="tc-header-st1 bg-img" data-background="assets/img/hero.jpg">
+            <div class="container">
+                <div class="content">
+                    <h1 class="title"> You approach the architecture </h1>
+                    <div class="info-card">
+                        <div class="img icon-80 rounded-circle overflow-hidden me-20 flex-shrink-0">
+                            <img src="assets/img/hero1.jpg" alt="" class="img-cover">
+                        </div>
+                        <div class="cont">
+                            <h6 class="fsz-24 mb-1"> Our company Architect  Firm </h6>
+                            <div class="text fsz-16"> Watch the videos (2.40s) </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between">
+                        <div class="col-lg-3">
+                            <div class="rotate-box" data-speed="1" data-lag="0.7">
+                                <a href="#" class="rotate-circle rotate-text d-inline-block">
+                                    <svg class="textcircle" viewBox="0 0 500 500">
+                                        <defs>
+                                            <path id="textcircle"
+                                                d="M250,400 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z">
+                                            </path>
+                                        </defs>
+                                        <text>
+                                            <textPath xlink:href="#textcircle" textLength="900"> Gactur architecture 2024 minimalistic design for </textPath>
+                                        </text>
+                                    </svg>
+                                </a>
+                                <div class="icon"> <img src="assets/img/fav_wh.svg" alt=""> </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 text-lg-end">
+                            <div class="txt-img-box d-inline-flex align-items-center mt-40">
+                                <div class="img icon-200 rounded-circle overflow-hidden me-20 flex-shrink-0">
+                                    <img src="assets/img/hero2.png" alt="" class="img-cover">
+                                </div>
+                                <div class="cont text-start">
+                                    <h5 class="fsz-30"> Let’s Build <br> Something Great <br> Together </h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="years d-flex justify-content-between mt-100">
+                        <h5 class="year fsz-30"> 2005 </h5>
+                        <h5 class="year fsz-30"> 2024 </h5>
+                    </div>
+                </div>
+            </div>
+            <h2 class="lg-title"> Architecture </h2>
+        </header>
+        <!--  End header  -->
+
+
+        <!--Contents-->
+        <main>
+            
+
+            <!--  Start about  -->
+            <section class="tc-about-st1">
+                <div class="container-fluid">
+                    <div class="about-card">
+                        <div class="row justify-content-between">
+                            <div class="col-lg-4">
+                                <div class="img">
+                                    <img src="assets/img/about1.jpg" alt="" class="img-cover">
+                                    <div class="float-img img-h-w" data-speed="1" data-lag="0.7">
+                                        <img src="assets/img/ab_icon.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="info">
+                                    <div class="section-head-st1 mb-30 js-splittext-lines">
+                                        <h6 class="fsz-20 cr-gold1 mb-15"> <span class="icon-20 me-1"> <img src="assets/img/fav_gold.svg" alt=""> </span> About Us </h6>
+                                        <h2 class="fsz-50"> "Architectural Iconic Structures Around the World" </h2>
+                                    </div>
+                                    <div class="text fsz-14 cr-999"> It seems like you're asking for ideas or information on creating a title related to architecture. Could you specify the context? For example, are you looking for a title for a presentation, an article, a project. </div>
+                                    <div class="progress-wrapper pt-20">
+                                        <div class="row align-items-end">
+                                            <div class="col-lg-4 wow fadeInUp slow" data-wow-delay="0.1s">
+                                                <h6 class="fsz-20 my-5 cr-999"> 12+ Work <span class="text-white d-block my-1"> Professional </span> Experience </h6>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="progress-box wow fadeInUp slow" data-wow-delay="0.2s">
+                                                    <div class="progress-item">
+                                                        <div class="text fsz-16 cr-gold1 d-flex justify-content-between text-capitalize"> <span class="txt"> Interior Design </span> <span class="prc"> 85% </span> </div>
+                                                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar" style="width: 85%"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="progress-item">
+                                                        <div class="text fsz-16 cr-gold1 d-flex justify-content-between text-capitalize"> <span class="txt"> Interior Design </span> <span class="prc"> 85% </span> </div>
+                                                        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar" style="width: 85%"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="signature th-50 mt-70 wow fadeInUp slow" data-wow-delay="0.3s"> <img src="assets/img/signature.svg" alt=""> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/img/line1.svg" alt="" class="line wow">
+            </section>
+            <!--  End about  -->
+
+
+            <!--  Start brands  -->
+            <section class="tc-brands-st1">
+                <div class="container">
+                    <div class="sm-title col-lg-7 mx-auto"> <span class="txt"> Our Website <span class="cr-gold1"> 75000+ </span> VIP Customer </span> </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="brands">
+                        <a href="#" class="brand wow fadeInUp slow" data-wow-delay="0.1s">
+                            <img src="assets/img/brands/1.svg" alt="">
+                        </a>
+                        <a href="#" class="brand wow fadeInUp slow" data-wow-delay="0.2s">
+                            <img src="assets/img/brands/2.svg" alt="">
+                        </a>
+                        <a href="#" class="brand wow fadeInUp slow" data-wow-delay="0.3s">
+                            <img src="assets/img/brands/3.svg" alt="">
+                        </a>
+                        <a href="#" class="brand wow fadeInUp slow" data-wow-delay="0.4s">
+                            <img src="assets/img/brands/4.svg" alt="">
+                        </a>
+                        <a href="#" class="brand wow fadeInUp slow" data-wow-delay="0.5s">
+                            <img src="assets/img/brands/5.svg" alt="">
+                        </a>
+                        <a href="#" class="brand wow fadeInUp slow" data-wow-delay="0.6s">
+                            <img src="assets/img/brands/6.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!--  End brands  -->
+
+
+            <!--  Start services  -->
+            <section class="tc-services-st1">
+                <div class="container">
+                    <div class="section-head-st2 text-center col-lg-9 mx-auto mb-60 js-splittext-lines">
+                        <div class="sub-title d-inline-block py-1 px-4 rounded-pill border brd-light text-uppercase mb-30"> Best Service </div>
+                        <h2 class="fsz-90 lh-2"> Building for Tomorrow Trends in Contemporary Architecture </h2>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="row gx-0">
+                        <div class="col-lg-5">
+                            <div class="img wow zoomIn slow" data-wow-delay="0.1s">
+                                <img src="assets/img/service-1.jpg" alt="" class="img-cover">
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="info ps-lg-5 ms-lg-5 pb-120">
+                                <div class="lg-txt split-txt"> Service </div>
+                                <!-- <div class="fill-txt d-none"> Service </div> -->
+                                <div class="service-cards wow fadeInUp slow" data-wow-delay="0.1s">
+                                    <div class="service-card">
+                                        <div class="icon">
+                                            <img src="assets/img/icons/ser1.svg" alt="">
+                                        </div>
+                                        <div class="cont">
+                                            <h5 class="fsz-30 mb-15"> Architectural Design </h5>
+                                            <div class="text fsz-16 cr-999"> Are you looking for information on architectural design, or do you have a specific project or idea in mind that you'd like to explore? I can help with anything from design concepts to trends and tools. </div>
+                                        </div>
+                                    </div>
+                                    <div class="service-card">
+                                        <div class="icon">
+                                            <img src="assets/img/icons/ser2.svg" alt="">
+                                        </div>
+                                        <div class="cont">
+                                            <h5 class="fsz-30 mb-15"> Landscape Design </h5>
+                                            <div class="text fsz-16 cr-999"> Are you looking for information on architectural design, or do you have a specific project or idea in mind that you'd like to explore? I can help with anything from design concepts to trends and tools. </div>
+                                        </div>
+                                    </div>
+                                    <div class="service-card">
+                                        <div class="icon">
+                                            <img src="assets/img/icons/ser3.svg" alt="">
+                                        </div>
+                                        <div class="cont">
+                                            <h5 class="fsz-30 mb-15"> 3D Architect Design </h5>
+                                            <div class="text fsz-16 cr-999"> Are you looking for information on architectural design, or do you have a specific project or idea in mind that you'd like to explore? I can help with anything from design concepts to trends and tools. </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--  End services  -->
+
+
+            <!--  Start portfolio  -->
+            <section class="tc-portfolio-st1">
+                <div class="container">
+                    <div class="section-head-st1 mb-60 col-lg-6 js-splittext-lines">
+                        <h6 class="fsz-20 cr-gold1 mb-15"> <span class="icon-20 me-1"> <img src="assets/img/fav_gold.svg" alt=""> </span> Our Portfolio </h6>
+                        <h2 class="fsz-50"> We provide the best solutions for your dream home </h2>
+                    </div>
+                    <div class="portfolio-slider float-cursor-container wow fadeInUp slow" data-wow-delay="0.1s">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="portfolio-card">
+                                    <div class="img">
+                                        <img src="assets/img/portfolio/1.jpg" alt="" class="img-cover">
+                                    </div>
+                                    <div class="info-card">
+                                        <span class="tag"> Architecture </span>
+                                        <h2 class="fsz-50"> Blending futuristic building </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="portfolio-card">
+                                    <div class="img">
+                                        <img src="assets/img/portfolio/2.jpg" alt="" class="img-cover">
+                                    </div>
+                                    <div class="info-card">
+                                        <span class="tag"> Architecture </span>
+                                        <h2 class="fsz-50"> Blending futuristic building </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="portfolio-card">
+                                    <div class="img">
+                                        <img src="assets/img/portfolio/1.jpg" alt="" class="img-cover">
+                                    </div>
+                                    <div class="info-card">
+                                        <span class="tag"> Architecture </span>
+                                        <h2 class="fsz-50"> Blending futuristic building </h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="portfolio-card">
+                                    <div class="img">
+                                        <img src="assets/img/portfolio/2.jpg" alt="" class="img-cover">
+                                    </div>
+                                    <div class="info-card">
+                                        <span class="tag"> Architecture </span>
+                                        <h2 class="fsz-50"> Blending futuristic building </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination swiper-pagination-st1"></div>
+                        <div class="float-cursor"> Hold And Drag </div>
+                    </div>
+                    <div class="swiper-progress"> <span class="swiper-progress-bar"></span> </div>
+                    <div class="numbers-pagination sub-font"></div>
+                </div>
+            </section>
+            <!--  End portfolio  -->
+
+
+            <!--  Start testimonials  -->
+            <section class="tc-testimonials-st1">
+                <div class="container">
+                    <div class="slider-content col-lg-8 mx-auto">
+                        <div class="lg-title txt-stroke-wh fsz-100 op-1 mb-30 js-splittext-lines"> What Client Says </div>
+                        <div class="testimonials-slider wow fadeInUp slow" data-wow-delay="0.1s">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="testi-card">
+                                        <div class="user-info mb-30 d-flex align-items-center"> 
+                                            <img src="assets/img/icons/qt.svg" alt="" class="qt th-40 me-80">
+                                            <span class="txt fsz-16 text-uppercase"> William Andrew </span> 
+                                        </div>
+                                        <div class="main-txt cr-999 sub-font">
+                                            <div class="text fsz-30 mb-20 lh-3"> It sounds like you're looking comon phrases or <span class="cr-gold1"> feedback that clients might say when discussing. </span> </div>
+                                            <div class="text fsz-30 mb-20 lh-3"> Architecture projects. Here's a list of things architecture clients might say architecture. We need the space to be flexible and multi-functional. </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testi-card">
+                                        <div class="user-info mb-30 d-flex align-items-center"> 
+                                            <img src="assets/img/icons/qt.svg" alt="" class="qt th-40 me-80">
+                                            <span class="txt fsz-16 text-uppercase"> William Andrew </span> 
+                                        </div>
+                                        <div class="main-txt cr-999 sub-font">
+                                            <div class="text fsz-30 mb-20 lh-3"> It sounds like you're looking comon phrases or <span class="cr-gold1"> feedback that clients might say when discussing. </span> </div>
+                                            <div class="text fsz-30 mb-20 lh-3"> Architecture projects. Here's a list of things architecture clients might say architecture. We need the space to be flexible and multi-functional. </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination swiper-pagination-st1 position-relative mt-30 text-start"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--  End testimonials  -->
+
+
+            <!--  Start blog  -->
+            <section class="tc-blog-st1">
+                <div class="container-fluid">
+                    <div class="section-head-st1 mb-60 col-lg-6 mx-auto text-center js-splittext-lines">
+                        <h6 class="fsz-20 cr-gold1 mb-15"> <span class="icon-20 me-1"> <img src="assets/img/fav_gold.svg" alt=""> </span> Our news </h6>
+                        <h2 class="fsz-50"> Latest News & Blogs </h2>
+                    </div>
+                    <div class="blog-slider pb-60 wow fadeInUp slow" data-wow-delay="0.1s">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="post-card">
+                                    <div class="img">
+                                        <img src="assets/img/blog/1.jpg" alt="" class="img-cover">
+                                    </div>
+                                    <div class="info">
+                                        <div class="tags">
+                                            <span class="tag"> By Admin </span>
+                                            <span class="tag"> Nov 25, 2024 </span>
+                                        </div>
+                                        <h6 class="title fsz-20 mt-20"> Innovative Future Architecture </h6>
+                                        <div class="text fsz-16 cr-999 mt-15"> These titles cover a range of topics within architecture, from design trends. </div>
+                                        <div class="more fsz-14 mt-15"> <span class="txt"> More Details </span> <span class="arrow ms-2"> <i class="fal fa-arrow-right-long"></i> </span> </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="post-card">
+                                    <div class="img">
+                                        <img src="assets/img/blog/2.jpg" alt="" class="img-cover">
+                                    </div>
+                                    <div class="info">
+                                        <div class="tags">
+                                            <span class="tag"> By Admin </span>
+                                            <span class="tag"> Nov 25, 2024 </span>
+                                        </div>
+                                        <h6 class="title fsz-20 mt-20"> Nature-Inspired Architecture Blending </h6>
+                                        <div class="text fsz-16 cr-999 mt-15"> These titles cover a range of topics within architecture, from design trends. </div>
+                                        <div class="more fsz-14 mt-15"> <span class="txt"> More Details </span> <span class="arrow ms-2"> <i class="fal fa-arrow-right-long"></i> </span> </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="post-card">
+                                    <div class="img">
+                                        <img src="assets/img/blog/3.jpg" alt="" class="img-cover">
+                                    </div>
+                                    <div class="info">
+                                        <div class="tags">
+                                            <span class="tag"> By Admin </span>
+                                            <span class="tag"> Nov 25, 2024 </span>
+                                        </div>
+                                        <h6 class="title fsz-20 mt-20"> The Intersection of Art and Function Exploring Modern Architecture </h6>
+                                        <div class="text fsz-16 cr-999 mt-15"> These titles cover a range of topics within architecture, from design trends. </div>
+                                        <div class="more fsz-14 mt-15"> <span class="txt"> More Details </span> <span class="arrow ms-2"> <i class="fal fa-arrow-right-long"></i> </span> </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination swiper-pagination-st1"></div>
+                    </div>
+                </div>
+            </section>
+            <!--  End blog  -->
+
+
+            <!--  Start instagram  -->
+            <section class="tc-instagram-st1">
+                <div class="container">
+                    <div class="cards float-cursor-container">
+                        <div class="row">
+                            <div class="col-lg-3 col-6">
+                                <a href="#" class="img wow fadeInUp slow" data-wow-delay="0.1s">
+                                    <img src="assets/img/insta/1.jpg" alt="" class="img-cover wow clippy-img">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="#" class="img wow fadeInUp slow" data-wow-delay="0.2s">
+                                    <img src="assets/img/insta/2.jpg" alt="" class="img-cover wow clippy-img">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="#" class="img wow fadeInUp slow" data-wow-delay="0.3s">
+                                    <img src="assets/img/insta/3.jpg" alt="" class="img-cover wow clippy-img">
+                                </a>
+                            </div>
+                            <div class="col-lg-3 col-6">
+                                <a href="#" class="img wow fadeInUp slow" data-wow-delay="0.4s">
+                                    <img src="assets/img/insta/4.jpg" alt="" class="img-cover wow clippy-img">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="float-cursor"> <div class="cont"> <span class="icon d-block fsz-20 mb-2"> <i class="fab fa-instagram"></i> </span> <span class="txt"> instagram </span> </div> </div>
+                    </div>
+                </div>
+            </section>
+            <!--  End instagram  -->
+
+
+            <!--  Start contact  -->
+            <section class="tc-contact-st1">
+                <div class="container">
+                    <div class="title-wrapper col-lg-9 mx-auto text-center js-splittext-lines">
+                        <div class="fsz-24 text-uppercase cr-gold1 ltspc-2 mb-10"> Have you project in mind? </div>
+                        <h2 class="fsz-100 text-capitalize lh-1"> Create Your Creative Unique Design </h2>
+                        <a href="#0" class="butn bg-gold1 rounded-pill mt-50 fsz-16 hover-bg-white"> Contact Design <i class="fat fa-long-arrow-right ms-2"></i> </a>
+                    </div>
+                    <div class="main-img">
+                        <img src="assets/img/contact.png" alt="" class="img-contain">
+                    </div>
+                </div>
+            </section>
+            <!--  End contact  -->
+
+
+        </main>
+        <!--End-Contents-->
+
+        <!--  Start footer  -->
+        <footer class="tc-footer-st1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="foot-info">
+                            <h2 class="fsz-50 fw-400"> <a href="#"> hello@Gactur.com </a> </h2>
+                            <div class="text fsz-16 cr-999 text-uppercase mt-15 ltspc-2 pe-lg-5"> We build comfortable future for our clients. </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 offset-lg-2">
+                        <div class="contact-info">
+                            <div class="item mb-30">
+                                <div class="text fsz-16 cr-999 mb-1"> Our website at </div>
+                                <h6 class="fsz-24"> <a href="#"> Gactur@arc.com </a> </h6>
+                            </div>
+                            <div class="item mb-30">
+                                <div class="text fsz-16 cr-999 mb-1"> If you're hurry, quick call for us </div>
+                                <h6 class="fsz-24"> <a href="#"> +88(177)444-90-17 </a> </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="adress-item">
+                            <h5 class="fsz-30 fw-400 mb-1"> Brooklyn, New <br> York </h5>
+                            <div class="text fsz-16 cr-999"> 962 Fifth Avenue Str, 3rd Floor-Trump Building NY 10006, United State. </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="links-wrapper my-5">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-4">
+                            <div class="social-links">
+                                <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+                                <a href="#"> <i class="fab fa-instagram"></i> </a>
+                                <a href="#"> <i class="fab fa-x-twitter"></i> </a>
+                                <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="foot-links text-lg-end mt-30">
+                                <a href="#"> <span class="num"> 1 </span> <span class="txt"> About </span> </a>
+                                <a href="#"> <span class="num"> 2 </span> <span class="txt"> Services </span> </a>
+                                <a href="#"> <span class="num"> 3 </span> <span class="txt"> Projects </span> </a>
+                                <a href="#"> <span class="num"> 4 </span> <span class="txt"> Team </span> </a>
+                                <a href="#"> <span class="num"> 5 </span> <span class="txt"> Blog </span> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="foot">
+                <div class="container">
+                    <div class="text fsz-16 cr-999 text-center"> © 1995-2024 All rights for <a href="#" class="text-white"> Gactur </a> exclusive </div>
+                </div>
+            </div>
+        </footer>
+        <!--  End footer  -->
+
+
+    </div>
+
+
+    <!--  Start to top button  -->
+    <!-- <a href="#" class="to_top" id="to_top">
+        <i class="fal fa-angle-up"></i>
+    </a> -->
+    <!--  End to top button  -->
+
+    <!--  request  -->
+    <script src="{% static 'common/assets/js/lib/jquery-3.0.0.min.js' %}"></script>
+    <script src="{% static 'common/assets/js/lib/jquery-migrate-3.0.0.min.js' %}"></script>
+    <script src="{% static 'common/assets/js/lib/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'common/assets/js/lib/wow.min.js' %}"></script>
+    <script src="{% static 'common/assets/js/lib/jquery.fancybox.js' %}"></script>
+    <script src="{% static 'common/assets/js/lib/lity.js' %}"></script>
+    <script src="{% static 'common/assets/js/lib/swiper8-bundle.min.js' %}"></script>
+    <script src="{% static 'common/assets/js/lib/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'common/assets/js/lib/jquery.counterup.js' %}"></script>
+    <script src="{% static 'common/assets/js/lib/parallaxie.js' %}"></script>
+    <!-- === Gsap === -->
+    <script src="{% static 'common/assets/js/gsap_lib/gsap.min.js' %}"></script>
+    <script src="{% static 'common/assets/js/gsap_lib/ScrollSmoother.min.js' %}"></script>
+    <script src="{% static 'common/assets/js/gsap_lib/ScrollTrigger.min.js' %}"></script>
+    <script src="{% static 'common/assets/js/gsap_lib/SplitText.min.js' %}"></script>
+    <!-- === common === -->
+    <script src="{% static 'common/assets/js/common.js' %}"></script>
+
+    <!-- ===== scripts ===== -->
+    <script src="{% static 'common/assets/js/scripts.js' %}"></script>
+
+</body>
+
+
+<!-- Mirrored from uicamp.smartinnovates.net/i/gactur-html/home1/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Aug 2025 08:03:04 GMT -->
+</html>

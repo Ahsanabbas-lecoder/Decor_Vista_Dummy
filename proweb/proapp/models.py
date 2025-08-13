@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 class Profile(models.Model):
     ROLE_CHOICES = [
         ('Designer', 'Designer'),
-        ('Inferior', 'Inferior'),
+        ('User', 'User'),
     ]
     
     user = models.OneToOneField(User, on_delete=models.CASCADE)

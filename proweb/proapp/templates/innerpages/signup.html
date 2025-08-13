@@ -89,7 +89,7 @@
                             id="id_role" name="role" required>
                         <option value="">Select your role</option>
                         <option value="Designer" {% if form.role.value == 'Designer' %}selected{% endif %}>Designer</option>
-                        <option value="Inferior" {% if form.role.value == 'Inferior' %}selected{% endif %}>User</option>
+                        <option value="User" {% if form.role.value == 'User' %}selected{% endif %}>User</option>
                     </select>
                     {% if form.role.errors %}
                         <div class="invalid-feedback">

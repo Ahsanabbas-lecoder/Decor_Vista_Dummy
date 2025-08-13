@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-<!-- Mirrored from uicamp.smartinnovates.net/i/gactur-html/home1/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Aug 2025 08:02:54 GMT -->
 <head>
     {% load static %}
     <!-- Metas -->
@@ -49,16 +46,15 @@
 
     <div class="lines"><span></span><span></span><span></span><span></span><span></span></div>
 
-
     <!--  Start sidemenu  -->
     <div class="tc-sidemenu-st1">
         <div class="main-links">
             <ul>
-                <li> <a href="{% static 'home1/index.html' %}" class="main-link"> Home one </a> </li>
-                <li><a href="../home2/index.html" class="main-link"> home two </a></li>
-                <li><a href="../home3/index.html" class="main-link"> home three </a></li>
-                <li><a href="../home4/index.html" class="main-link"> home four </a></li>
-                <li><a href="../home5/index.html" class="main-link"> home five </a></li>
+                <li><a href="{% static 'home1/index.html' %}" class="main-link"> Home one </a> </li>
+                <li><a href="{% static 'home2/index.html' %}" class="main-link"> home two </a></li>
+                <li><a href="{% static 'home3/index.html' %}" class="main-link"> home three </a></li>
+                <li><a href="{% static 'home4/index.html' %}" class="main-link"> home four </a></li>
+                <li><a href="{% static 'home5/index.html' %}" class="main-link"> home five </a></li>
             </ul>
         </div>
         <div class="social-links">
@@ -70,9 +66,9 @@
             </ul>
         </div>
         <span class="white-line"></span>
-        <img src="../common/assets/img/contact.png" alt="" class="cube img-cover">
+        <img src="{% static 'common/assets/img/contact.png' %}" alt="" class="cube img-cover">
         <span class="clss"> <i class="fal fa-times"></i> </span>
-        <img src="../common/assets/img/logo_wh.svg" alt="" class="logo">
+        <img src="{% static 'common/assets/img/logo_wh.svg' %}" alt="" class="logo">
     </div>
     <!--  End sidemenu  -->
 
@@ -101,16 +97,13 @@
         </div>
     </div>
 
-
-
     <div id="scrollsmoother-container" class="scrollsmoother-container">
-
 
         <!--  Start navbar  -->
         <nav class="navbar navbar-expand-lg tc-navbar-st1 navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand me-lg-5" href="#">
-                    <img src="assets/img/logo_wh.svg" alt="" class="logo">
+                    <img src="{% static 'assets/img/logo_wh.svg' %}" alt="" class="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -124,16 +117,16 @@
                                 Home
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="index.html">Home 1 dark</a></li>
-                                <li><a class="dropdown-item" href="index-light.html">Home 1 light</a></li>
-                                <li><a class="dropdown-item" href="../home2/index.html">Home 2 dark</a></li>
-                                <li><a class="dropdown-item" href="../home2/index-light.html">Home 2 light</a></li>
-                                <li><a class="dropdown-item" href="../home3/index.html">Home 3 dark</a></li>
-                                <li><a class="dropdown-item" href="../home3/index-light.html">Home 3 light</a></li>
-                                <li><a class="dropdown-item" href="../home4/index.html">Home 4 dark</a></li>
-                                <li><a class="dropdown-item" href="../home4/index-light.html">Home 4 light</a></li>
-                                <li><a class="dropdown-item" href="../home5/index.html">Home 5 dark</a></li>
-                                <li><a class="dropdown-item" href="../home5/index-light.html">Home 5 light</a></li>
+                                <li><a class="dropdown-item" href="{% static 'home1/index.html' %}">Home 1 dark</a></li>
+                                <li><a class="dropdown-item" href="{% static 'home1/index-light.html' %}">Home 1 light</a></li>
+                                <li><a class="dropdown-item" href="{% static 'home2/index.html' %}">Home 2 dark</a></li>
+                                <li><a class="dropdown-item" href="{% static 'home2/index-light.html' %}">Home 2 light</a></li>
+                                <li><a class="dropdown-item" href="{% static 'home3/index.html' %}">Home 3 dark</a></li>
+                                <li><a class="dropdown-item" href="{% static 'home3/index-light.html' %}">Home 3 light</a></li>
+                                <li><a class="dropdown-item" href="{% static 'home4/index.html' %}">Home 4 dark</a></li>
+                                <li><a class="dropdown-item" href="{% static 'home4/index-light.html' %}">Home 4 light</a></li>
+                                <li><a class="dropdown-item" href="{% static 'home5/index.html' %}">Home 5 dark</a></li> 
+                                <li><a class="dropdown-item" href="{% static 'home5/index-light.html' %}">Home 5 light</a></li>                             
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -142,53 +135,44 @@
                                 Page
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="../innerpages/about.html">about dark</a></li>
-                                <li><a class="dropdown-item" href="../innerpages/about-light.html">about light</a></li>
-                                <li><a class="dropdown-item" href="../innerpages/blog.html">blog dark</a></li>
-                                <li><a class="dropdown-item" href="../innerpages/blog-light.html">blog light</a></li>
-                                <li><a class="dropdown-item" href="../innerpages/blog_aside.html">blog aside dark</a></li>
-                                <li><a class="dropdown-item" href="../innerpages/blog_aside-light.html">blog aside light</a></li>
-                                <li><a class="dropdown-item" href="../innerpages/blog_det.html">blog details dark</a></li>
-                                <li><a class="dropdown-item" href="../innerpages/blog_det-light.html">blog details light</a></li>
-                                <li><a class="dropdown-item" href="../innerpages/contact.html">contact dark</a></li>
-                                <li><a class="dropdown-item" href="../innerpages/contact-light.html">contact light</a></li>
-                                <li><a class="dropdown-item" href="../innerpages/faq.html">faq dark</a></li>
-                                <li><a class="dropdown-item" href="../innerpages/faq-light.html">faq light</a></li>
-                                <li><a class="dropdown-item" href="../innerpages/project_det.html">project details dark</a></li>
-                                <li><a class="dropdown-item" href="../innerpages/project_det-light.html">project details light</a></li>
-                                <li><a class="dropdown-item" href="../innerpages/projects.html">projects dark</a></li>
-                                <li><a class="dropdown-item" href="../innerpages/projects-light.html">projects light</a></li>
-                                <li><a class="dropdown-item" href="../innerpages/projects2.html">projects 2 dark</a></li>
-                                <li><a class="dropdown-item" href="../innerpages/projects2-light.html">projects 2 light</a></li>
-                                <li><a class="dropdown-item" href="../innerpages/service_det.html">services details dark</a></li>
-                                <li><a class="dropdown-item" href="../innerpages/service_det-light.html">services details light</a></li>
-                                <li><a class="dropdown-item" href="../innerpages/services.html">services dark</a></li>
-                                <li><a class="dropdown-item" href="../innerpages/services-light.html">services light</a></li>
-                                <li><a class="dropdown-item" href="../innerpages/services2.html">services 2 dark</a></li>
-                                <li><a class="dropdown-item" href="../innerpages/services2-light.html">services 2 light</a></li>
-                                <li><a class="dropdown-item" href="../innerpages/team.html">team dark</a></li>
-                                <li><a class="dropdown-item" href="../innerpages/team-light.html">team light</a></li>
-                                <li><a class="dropdown-item" href="../innerpages/testimonials.html">testimonials dark</a></li>
-                                <li><a class="dropdown-item" href="../innerpages/testimonials-light.html">testimonials light</a></li>
+                                <li><a class="dropdown-item" href="{% url 'about' %}">about dark</a></li>
+                                <li><a class="dropdown-item" href="{% url 'about' %}">about light</a></li>
+                                <li><a class="dropdown-item" href="{% url 'innerpages/blog.html' %}">blog dark</a></li>
+                                <li><a class="dropdown-item" href="{% url 'innerpages/blog-light.html' %}">blog light</a></li>
+                                <li><a class="dropdown-item" href="{% static 'innerpages/blog_aside.html' %}">blog aside dark</a></li>
+                                <li><a class="dropdown-item" href="{% static 'innerpages/blog_aside-light.html' %}">blog aside light</a></li>
+                                <li><a class="dropdown-item" href="{% static 'innerpages/blog_det.html' %}">blog details dark</a></li>
+                                <li><a class="dropdown-item" href="{% static 'innerpages/blog_det-light.html' %}">blog details light</a></li>
+                                <li><a class="dropdown-item" href="{% static 'innerpages/contact.html' %}">contact dark</a></li>
+                                <li><a class="dropdown-item" href="{% static 'innerpages/contact-light.html' %}">contact light</a></li>
+                                <li><a class="dropdown-item" href="{% static 'innerpages/faq.html' %}">faq dark</a></li>
+                                <li><a class="dropdown-item" href="{% static 'innerpages/faq-light.html' %}">faq light</a></li>
+                                <li><a class="dropdown-item" href="{% static 'innerpages/project_det.html' %}">project details dark</a></li>
+                                <li><a class="dropdown-item" href="{% static 'innerpages/project_det-light.html' %}">project details light</a></li>
+                                <li><a class="dropdown-item" href="{% static 'innerpages/projects.html' %}">projects dark</a></li>
+                                <li><a class="dropdown-item" href="{% static 'innerpages/projects-light.html' %}">projects light</a></li>
+                                <li><a class="dropdown-item" href="{% static 'innerpages/projects2.html' %}">projects 2 dark</a></li>
+                                <li><a class="dropdown-item" href="{% static 'innerpages/projects2-light.html' %}">projects 2 light</a></li>
+                                <li><a class="dropdown-item" href="{% static 'innerpages/service_det.html' %}">services details dark</a></li>
+                                <li><a class="dropdown-item" href="{% static 'innerpages/service_det-light.html' %}">services details light</a></li>
+                                <li><a class="dropdown-item" href="{% static 'innerpages/services.html' %}">services dark</a></li>
+                                <li><a class="dropdown-item" href="{% static 'innerpages/services-light.html' %}">services light</a></li>
+                                <li><a class="dropdown-item" href="{% static 'innerpages/services2.html' %}">services 2 dark</a></li>
+                                <li><a class="dropdown-item" href="{% static 'innerpages/services2-light.html' %}">services 2 light</a></li>
+                                <li><a class="dropdown-item" href="{% static 'innerpages/team.html' %}">team dark</a></li>
+                                <li><a class="dropdown-item" href="{% static 'innerpages/team-light.html' %}">team light</a></li>
+                                <li><a class="dropdown-item" href="{% static 'innerpages/testimonials.html' %}">testimonials dark</a></li>
+                                <li><a class="dropdown-item" href="{% static 'innerpages/testimonials-light.html' %}">testimonials light</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../innerpages/projects.html">Project</a>
+                            <a class="nav-link" href="{% static 'innerpages/projects.html' %}">Project</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../innerpages/blog.html">Blog</a>
+                            <a class="nav-link" href="{% static 'innerpages/blog.html' %}">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../innerpages/contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{% url 'signup'%}">Signup</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{% url 'login'%}">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{% url 'logout'%}">Logout</a>
+                            <a class="nav-link" href="{% static 'innerpages/contact.html' %}">Contact</a>
                         </li>
                     </ul>
                     <div class="nav-side d-flex align-items-center">
@@ -206,15 +190,14 @@
         </nav>
         <!--  End navbar  -->
 
-        
         <!--  Start header  -->
-        <header class="tc-header-st1 bg-img" data-background="assets/img/hero.jpg">
+        <header class="tc-header-st1 bg-img" data-background="{% static 'assets/img/ab1.jpg' %}">
             <div class="container">
                 <div class="content">
                     <h1 class="title"> You approach the architecture </h1>
                     <div class="info-card">
                         <div class="img icon-80 rounded-circle overflow-hidden me-20 flex-shrink-0">
-                            <img src="assets/img/hero1.jpg" alt="" class="img-cover">
+                            <img src="{% static 'assets/img/hero1.jpg' %}" alt="" class="img-cover">
                         </div>
                         <div class="cont">
                             <h6 class="fsz-24 mb-1"> Our company Architect  Firm </h6>
@@ -236,13 +219,13 @@
                                         </text>
                                     </svg>
                                 </a>
-                                <div class="icon"> <img src="assets/img/fav_wh.svg" alt=""> </div>
+                                <div class="icon"> <img src="{% static 'assets/img/fav_wh.svg' %}" alt=""> </div>
                             </div>
                         </div>
                         <div class="col-lg-5 text-lg-end">
                             <div class="txt-img-box d-inline-flex align-items-center mt-40">
                                 <div class="img icon-200 rounded-circle overflow-hidden me-20 flex-shrink-0">
-                                    <img src="assets/img/hero2.png" alt="" class="img-cover">
+                                    <img src="{% static 'assets/img/7.jpg' %}" alt="" class="img-cover">
                                 </div>
                                 <div class="cont text-start">
                                     <h5 class="fsz-30"> Let’s Build <br> Something Great <br> Together </h5>
@@ -260,11 +243,8 @@
         </header>
         <!--  End header  -->
 
-
         <!--Contents-->
         <main>
-            
-
             <!--  Start about  -->
             <section class="tc-about-st1">
                 <div class="container-fluid">
@@ -272,16 +252,16 @@
                         <div class="row justify-content-between">
                             <div class="col-lg-4">
                                 <div class="img">
-                                    <img src="assets/img/about1.jpg" alt="" class="img-cover">
+                                    <img src="{% static 'assets/img/about1.jpg' %}" alt="" class="img-cover">
                                     <div class="float-img img-h-w" data-speed="1" data-lag="0.7">
-                                        <img src="assets/img/ab_icon.svg" alt="">
+                                        <img src="{% static 'assets/img/ab_icon.svg' %}" alt="">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-7">
                                 <div class="info">
                                     <div class="section-head-st1 mb-30 js-splittext-lines">
-                                        <h6 class="fsz-20 cr-gold1 mb-15"> <span class="icon-20 me-1"> <img src="assets/img/fav_gold.svg" alt=""> </span> About Us </h6>
+                                        <h6 class="fsz-20 cr-gold1 mb-15"> <span class="icon-20 me-1"> <img src="{% static 'assets/img/fav_gold.svg' %}" alt=""> </span> About Us </h6>
                                         <h2 class="fsz-50"> "Architectural Iconic Structures Around the World" </h2>
                                     </div>
                                     <div class="text fsz-14 cr-999"> It seems like you're asking for ideas or information on creating a title related to architecture. Could you specify the context? For example, are you looking for a title for a presentation, an article, a project. </div>
@@ -305,7 +285,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="signature th-50 mt-70 wow fadeInUp slow" data-wow-delay="0.3s"> <img src="assets/img/signature.svg" alt=""> </div>
+                                                <div class="signature th-50 mt-70 wow fadeInUp slow" data-wow-delay="0.3s"> <img src="{% static 'assets/img/signature.svg' %}" alt=""> </div>
                                             </div>
                                         </div>
                                     </div>
@@ -314,10 +294,9 @@
                         </div>
                     </div>
                 </div>
-                <img src="assets/img/line1.svg" alt="" class="line wow">
+                <img src="{% static 'assets/img/line1.svg' %}" alt="" class="line wow">
             </section>
             <!--  End about  -->
-
 
             <!--  Start brands  -->
             <section class="tc-brands-st1">
@@ -327,28 +306,27 @@
                 <div class="container-fluid">
                     <div class="brands">
                         <a href="#" class="brand wow fadeInUp slow" data-wow-delay="0.1s">
-                            <img src="assets/img/brands/1.svg" alt="">
+                            <img src="{% static 'assets/img/brands/1.svg' %}" alt="">
                         </a>
                         <a href="#" class="brand wow fadeInUp slow" data-wow-delay="0.2s">
-                            <img src="assets/img/brands/2.svg" alt="">
+                            <img src="{% static 'assets/img/brands/2.svg' %}" alt="">
                         </a>
                         <a href="#" class="brand wow fadeInUp slow" data-wow-delay="0.3s">
-                            <img src="assets/img/brands/3.svg" alt="">
+                            <img src="{% static 'assets/img/brands/3.svg' %}" alt="">
                         </a>
                         <a href="#" class="brand wow fadeInUp slow" data-wow-delay="0.4s">
-                            <img src="assets/img/brands/4.svg" alt="">
+                            <img src="{% static 'assets/img/brands/4.svg' %}" alt="">
                         </a>
                         <a href="#" class="brand wow fadeInUp slow" data-wow-delay="0.5s">
-                            <img src="assets/img/brands/5.svg" alt="">
+                            <img src="{% static 'assets/img/brands/5.svg' %}" alt="">
                         </a>
                         <a href="#" class="brand wow fadeInUp slow" data-wow-delay="0.6s">
-                            <img src="assets/img/brands/6.svg" alt="">
+                            <img src="{% static 'assets/img/brands/6.svg' %}" alt="">
                         </a>
                     </div>
                 </div>
             </section>
             <!--  End brands  -->
-
 
             <!--  Start services  -->
             <section class="tc-services-st1">
@@ -362,17 +340,16 @@
                     <div class="row gx-0">
                         <div class="col-lg-5">
                             <div class="img wow zoomIn slow" data-wow-delay="0.1s">
-                                <img src="assets/img/service-1.jpg" alt="" class="img-cover">
+                                <img src="{% static 'assets/img/service-1.jpg' %}" alt="" class="img-cover">
                             </div>
                         </div>
                         <div class="col-lg-7">
                             <div class="info ps-lg-5 ms-lg-5 pb-120">
                                 <div class="lg-txt split-txt"> Service </div>
-                                <!-- <div class="fill-txt d-none"> Service </div> -->
                                 <div class="service-cards wow fadeInUp slow" data-wow-delay="0.1s">
                                     <div class="service-card">
                                         <div class="icon">
-                                            <img src="assets/img/icons/ser1.svg" alt="">
+                                            <img src="{% static 'assets/img/icons/ser1.svg' %}" alt="">
                                         </div>
                                         <div class="cont">
                                             <h5 class="fsz-30 mb-15"> Architectural Design </h5>
@@ -381,7 +358,7 @@
                                     </div>
                                     <div class="service-card">
                                         <div class="icon">
-                                            <img src="assets/img/icons/ser2.svg" alt="">
+                                            <img src="{% static 'assets/img/icons/ser2.svg' %}" alt="">
                                         </div>
                                         <div class="cont">
                                             <h5 class="fsz-30 mb-15"> Landscape Design </h5>
@@ -390,7 +367,7 @@
                                     </div>
                                     <div class="service-card">
                                         <div class="icon">
-                                            <img src="assets/img/icons/ser3.svg" alt="">
+                                            <img src="{% static 'assets/img/icons/ser3.svg' %}" alt="">
                                         </div>
                                         <div class="cont">
                                             <h5 class="fsz-30 mb-15"> 3D Architect Design </h5>
@@ -400,17 +377,16 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div><!-- row -->
+                </div><!-- content -->
             </section>
             <!--  End services  -->
-
 
             <!--  Start portfolio  -->
             <section class="tc-portfolio-st1">
                 <div class="container">
                     <div class="section-head-st1 mb-60 col-lg-6 js-splittext-lines">
-                        <h6 class="fsz-20 cr-gold1 mb-15"> <span class="icon-20 me-1"> <img src="assets/img/fav_gold.svg" alt=""> </span> Our Portfolio </h6>
+                        <h6 class="fsz-20 cr-gold1 mb-15"> <span class="icon-20 me-1"> <img src="{% static 'assets/img/fav_gold.svg' %}" alt=""> </span> Our Portfolio </h6>
                         <h2 class="fsz-50"> We provide the best solutions for your dream home </h2>
                     </div>
                     <div class="portfolio-slider float-cursor-container wow fadeInUp slow" data-wow-delay="0.1s">
@@ -418,7 +394,7 @@
                             <div class="swiper-slide">
                                 <div class="portfolio-card">
                                     <div class="img">
-                                        <img src="assets/img/portfolio/1.jpg" alt="" class="img-cover">
+                                        <img src="{% static 'assets/img/portfolio/1.jpg' %}" alt="" class="img-cover">
                                     </div>
                                     <div class="info-card">
                                         <span class="tag"> Architecture </span>
@@ -429,7 +405,7 @@
                             <div class="swiper-slide">
                                 <div class="portfolio-card">
                                     <div class="img">
-                                        <img src="assets/img/portfolio/2.jpg" alt="" class="img-cover">
+                                        <img src="{% static 'assets/img/portfolio/2.jpg' %}" alt="" class="img-cover">
                                     </div>
                                     <div class="info-card">
                                         <span class="tag"> Architecture </span>
@@ -440,7 +416,7 @@
                             <div class="swiper-slide">
                                 <div class="portfolio-card">
                                     <div class="img">
-                                        <img src="assets/img/portfolio/1.jpg" alt="" class="img-cover">
+                                        <img src="{% static 'assets/img/portfolio/1.jpg' %}" alt="" class="img-cover">
                                     </div>
                                     <div class="info-card">
                                         <span class="tag"> Architecture </span>
@@ -451,7 +427,7 @@
                             <div class="swiper-slide">
                                 <div class="portfolio-card">
                                     <div class="img">
-                                        <img src="assets/img/portfolio/2.jpg" alt="" class="img-cover">
+                                        <img src="{% static 'assets/img/portfolio/2.jpg' %}" alt="" class="img-cover">
                                     </div>
                                     <div class="info-card">
                                         <span class="tag"> Architecture </span>
@@ -469,7 +445,6 @@
             </section>
             <!--  End portfolio  -->
 
-
             <!--  Start testimonials  -->
             <section class="tc-testimonials-st1">
                 <div class="container">
@@ -480,7 +455,7 @@
                                 <div class="swiper-slide">
                                     <div class="testi-card">
                                         <div class="user-info mb-30 d-flex align-items-center"> 
-                                            <img src="assets/img/icons/qt.svg" alt="" class="qt th-40 me-80">
+                                            <img src="{% static 'assets/img/icons/qt.svg' %}" alt="" class="qt th-40 me-80">
                                             <span class="txt fsz-16 text-uppercase"> William Andrew </span> 
                                         </div>
                                         <div class="main-txt cr-999 sub-font">
@@ -492,7 +467,7 @@
                                 <div class="swiper-slide">
                                     <div class="testi-card">
                                         <div class="user-info mb-30 d-flex align-items-center"> 
-                                            <img src="assets/img/icons/qt.svg" alt="" class="qt th-40 me-80">
+                                            <img src="{% static 'assets/img/icons/qt.svg' %}" alt="" class="qt th-40 me-80">
                                             <span class="txt fsz-16 text-uppercase"> William Andrew </span> 
                                         </div>
                                         <div class="main-txt cr-999 sub-font">
@@ -509,12 +484,11 @@
             </section>
             <!--  End testimonials  -->
 
-
             <!--  Start blog  -->
             <section class="tc-blog-st1">
                 <div class="container-fluid">
                     <div class="section-head-st1 mb-60 col-lg-6 mx-auto text-center js-splittext-lines">
-                        <h6 class="fsz-20 cr-gold1 mb-15"> <span class="icon-20 me-1"> <img src="assets/img/fav_gold.svg" alt=""> </span> Our news </h6>
+                        <h6 class="fsz-20 cr-gold1 mb-15"> <span class="icon-20 me-1"> <img src="{% static 'assets/img/fav_gold.svg' %}" alt=""> </span> Our news </h6>
                         <h2 class="fsz-50"> Latest News & Blogs </h2>
                     </div>
                     <div class="blog-slider pb-60 wow fadeInUp slow" data-wow-delay="0.1s">
@@ -522,7 +496,7 @@
                             <div class="swiper-slide">
                                 <a href="#" class="post-card">
                                     <div class="img">
-                                        <img src="assets/img/blog/1.jpg" alt="" class="img-cover">
+                                        <img src="{% static 'assets/img/blog/1.jpg' %}" alt="" class="img-cover">
                                     </div>
                                     <div class="info">
                                         <div class="tags">
@@ -538,7 +512,7 @@
                             <div class="swiper-slide">
                                 <a href="#" class="post-card">
                                     <div class="img">
-                                        <img src="assets/img/blog/2.jpg" alt="" class="img-cover">
+                                        <img src="{% static 'assets/img/blog/2.jpg' %}" alt="" class="img-cover">
                                     </div>
                                     <div class="info">
                                         <div class="tags">
@@ -554,7 +528,7 @@
                             <div class="swiper-slide">
                                 <a href="#" class="post-card">
                                     <div class="img">
-                                        <img src="assets/img/blog/3.jpg" alt="" class="img-cover">
+                                        <img src="{% static 'assets/img/blog/3.jpg' %}" alt="" class="img-cover">
                                     </div>
                                     <div class="info">
                                         <div class="tags">
@@ -574,7 +548,6 @@
             </section>
             <!--  End blog  -->
 
-
             <!--  Start instagram  -->
             <section class="tc-instagram-st1">
                 <div class="container">
@@ -582,22 +555,22 @@
                         <div class="row">
                             <div class="col-lg-3 col-6">
                                 <a href="#" class="img wow fadeInUp slow" data-wow-delay="0.1s">
-                                    <img src="assets/img/insta/1.jpg" alt="" class="img-cover wow clippy-img">
+                                    <img src="{% static 'assets/img/insta/1.jpg' %}" alt="" class="img-cover wow clippy-img">
                                 </a>
                             </div>
                             <div class="col-lg-3 col-6">
                                 <a href="#" class="img wow fadeInUp slow" data-wow-delay="0.2s">
-                                    <img src="assets/img/insta/2.jpg" alt="" class="img-cover wow clippy-img">
+                                    <img src="{% static 'assets/img/insta/2.jpg' %}" alt="" class="img-cover wow clippy-img">
                                 </a>
                             </div>
                             <div class="col-lg-3 col-6">
                                 <a href="#" class="img wow fadeInUp slow" data-wow-delay="0.3s">
-                                    <img src="assets/img/insta/3.jpg" alt="" class="img-cover wow clippy-img">
+                                    <img src="{% static 'assets/img/insta/3.jpg' %}" alt="" class="img-cover wow clippy-img">
                                 </a>
                             </div>
                             <div class="col-lg-3 col-6">
                                 <a href="#" class="img wow fadeInUp slow" data-wow-delay="0.4s">
-                                    <img src="assets/img/insta/4.jpg" alt="" class="img-cover wow clippy-img">
+                                    <img src="{% static 'assets/img/insta/4.jpg' %}" alt="" class="img-cover wow clippy-img">
                                 </a>
                             </div>
                         </div>
@@ -606,7 +579,6 @@
                 </div>
             </section>
             <!--  End instagram  -->
-
 
             <!--  Start contact  -->
             <section class="tc-contact-st1">
@@ -617,13 +589,11 @@
                         <a href="#0" class="butn bg-gold1 rounded-pill mt-50 fsz-16 hover-bg-white"> Contact Design <i class="fat fa-long-arrow-right ms-2"></i> </a>
                     </div>
                     <div class="main-img">
-                        <img src="assets/img/contact.png" alt="" class="img-contain">
+                        <img src="{% static 'assets/img/contact.png' %}" alt="" class="img-contain">
                     </div>
                 </div>
             </section>
             <!--  End contact  -->
-
-
         </main>
         <!--End-Contents-->
 
@@ -685,16 +655,7 @@
             </div>
         </footer>
         <!--  End footer  -->
-
-
     </div>
-
-
-    <!--  Start to top button  -->
-    <!-- <a href="#" class="to_top" id="to_top">
-        <i class="fal fa-angle-up"></i>
-    </a> -->
-    <!--  End to top button  -->
 
     <!--  request  -->
     <script src="{% static 'common/assets/js/lib/jquery-3.0.0.min.js' %}"></script>
@@ -719,7 +680,4 @@
     <script src="{% static 'common/assets/js/scripts.js' %}"></script>
 
 </body>
-
-
-<!-- Mirrored from uicamp.smartinnovates.net/i/gactur-html/home1/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Aug 2025 08:03:04 GMT -->
 </html>

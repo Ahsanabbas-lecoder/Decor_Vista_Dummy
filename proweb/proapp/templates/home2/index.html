@@ -4,6 +4,7 @@
 
 <!-- Mirrored from uicamp.smartinnovates.net/i/gactur-html/home2/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Aug 2025 08:03:04 GMT -->
 <head>
+    {% load static %}
     <!-- Metas -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,21 +27,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
 
     <!-- fontawesome icons  -->
-    <link rel="stylesheet" href="../common/assets/css/lib/all.css">
+    <link rel="stylesheet" href="{% static 'common/assets/css/lib/all.css' %}">
     <!-- animate css  -->
-    <link rel="stylesheet" href="../common/assets/css/lib/animate.css">
+    <link rel="stylesheet" href="{% static 'common/assets/css/lib/animate.css' %}">
     <!-- fancybox popup  -->
-    <link rel="stylesheet" href="../common/assets/css/lib/jquery.fancybox.css">
+    <link rel="stylesheet" href="{% static 'common/assets/css/lib/jquery.fancybox.css %}">
     <!-- lity popup  -->
-    <link rel="stylesheet" href="../common/assets/css/lib/lity.css">
+    <link rel="stylesheet" href="{% static 'common/assets/css/lib/lity.css '%}">
     <!-- swiper slider  -->
-    <link rel="stylesheet" href="../common/assets/css/lib/swiper8.min.css">
+    <link rel="stylesheet" href="{% static 'common/assets/css/lib/swiper8.min.css' %}">
 
     <!-- common style -->
-    <link rel="stylesheet" href="../common/assets/css/common_style.css">
+    <link rel="stylesheet" href="{% static 'common/assets/css/common_style.css' %}">
 
     <!-- style -->
-    <link rel="stylesheet" href="../common/assets/css/style.css">
+    <link rel="stylesheet" href="{% static 'common/assets/css/style.css' %}">
 
 </head>
 
@@ -52,11 +53,11 @@
     <div class="tc-sidemenu-st1">
         <div class="main-links">
             <ul>
-                <li> <a href="../home1/index.html" class="main-link"> Home one </a> </li>
+                <li> <a href="{% static 'home1/index.html' %}" class="main-link"> Home one </a> </li>
                 <li><a href="index.html" class="main-link"> home two </a></li>
-                <li><a href="../home3/index.html" class="main-link"> home three </a></li>
-                <li><a href="../home4/index.html" class="main-link"> home four </a></li>
-                <li><a href="../home5/index.html" class="main-link"> home five </a></li>
+                <li><a href="{% static 'home3/index.html' %}" class="main-link"> home three </a></li>
+                <li><a href="{% static 'home4/index.html' %}" class="main-link"> home four </a></li>
+                <li><a href="{% static 'home5/index.html' %}" class="main-link"> home five </a></li>
             </ul>
         </div>
         <div class="social-links">
@@ -68,9 +69,9 @@
             </ul>
         </div>
         <span class="white-line"></span>
-        <img src="../common/assets/img/contact.png" alt="" class="cube img-cover">
+        <img src="{% static 'common/assets/img/contact.png %}" alt="" class="cube img-cover">
         <span class="clss"> <i class="fal fa-times"></i> </span>
-        <img src="../common/assets/img/logo_wh.svg" alt="" class="logo">
+        <img src="{% static 'common/assets/img/logo_wh.svg' %}" alt="" class="logo">
     </div>
     <!--  End sidemenu  -->
 
@@ -108,7 +109,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark tc-navbar-st2">
             <div class="container-fluid">
                 <a class="navbar-brand me-lg-5" href="#">
-                    <img src="assets/img/logo_wh.svg" alt="" class="logo">
+                    <img src="{% static 'assets/img/logo_wh.svg' %}" alt="" class="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -181,7 +182,7 @@
                         </li>
                     </ul>
                     <div class="nav-side d-flex align-items-center">
-                        <a href="#" class="butn bg-gold1 rounded-pill px-4"> <span> Let’s Talk <img src="assets/img/t-arrow.svg" alt="" class="t-arrow ms-1"> </span> </a>
+                        <a href="#" class="butn bg-gold1 rounded-pill px-4"> <span> Let’s Talk <img src="{% static 'assets/img/t-arrow.svg' %}" alt="" class="t-arrow ms-1"> </span> </a>
                         <a href="#" class="sidemenu-toggle menu-toggle-btn"> <i class="fat fa-bars-staggered"></i> </a>
                     </div>
                 </div>
@@ -198,7 +199,7 @@
                     <div class="row justify-content-between">
                         <div class="col-lg-3">
                             <div class="lg-img pe-lg-4">
-                                <img src="assets/img/hero1.jpg" alt="" class="img-cover">
+                                <img src="{% static 'assets/img/hero1.jpg' %}" alt="" class="img-cover">
                             </div>
                         </div>
                         <div class="col-lg-5">
@@ -206,12 +207,12 @@
                                 <div class="row gx-5">
                                     <div class="col-6">
                                         <div class="sm-img th-300 pe-lg-3">
-                                            <img src="assets/img/hero3.jpg" alt="" class="img-cover">
+                                            <img src="{% static 'assets/img/hero3.jpg' %}" alt="" class="img-cover">
                                         </div>
                                     </div>
                                     <div class="col-6">
                                         <div class="sm-img th-300 ps-lg-3">
-                                            <img src="assets/img/hero4.jpg" alt="" class="img-cover">
+                                            <img src="{% static 'assets/img/hero4.jpg' %}" alt="" class="img-cover">
                                         </div>
                                     </div>
                                 </div>
@@ -219,13 +220,13 @@
                         </div>
                         <div class="col-lg-3">
                             <div class="lg-img2 ps-lg-4">
-                                <img src="assets/img/hero2.jpg" alt="" class="img-cover">
+                                <img src="{% static 'assets/img/hero2.jpg' %}" alt="" class="img-cover">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="info-content">
-                    <h1 class="col-lg-6 mx-auto ps-lg-3"> Architecture to <img src="assets/img/hero5.png" alt=""> build dream </h1>
+                    <h1 class="col-lg-6 mx-auto ps-lg-3"> Architecture to <img src="{% static 'assets/img/hero5.png' %}" alt=""> build dream </h1>
                     <div class="row">
                         <div class="col-lg-3">
                             <div class="exp text-lg-end mt-5 mt-lg-0">
@@ -235,12 +236,12 @@
                         </div>
                         <div class="col-lg-2">
                             <div class="arrow text-center mt-3">
-                                <img src="assets/img/arrow1.svg" alt="">
+                                <img src="{% statassets/img/arrow1.svg%}" alt="">
                             </div>
                         </div>
                         <div class="col-lg-5">
                             <div class="text fsz-16 cr-999"> Building your dream body is like constructing a masterpiece; it requires careful planning, dedication, and the right resources. </div>
-                            <a href="#" class="butn border brd-light hover-bg-gold1 rounded-pill px-4 mt-30"> <span> More Details <img src="assets/img/t-arrow.svg" alt="" class="t-arrow ms-1"> </span> </a>
+                            <a href="#" class="butn border brd-light hover-bg-gold1 rounded-pill px-4 mt-30"> <span> More Details <img src="{% static 'assets/img/t-arrow.svg' %}" alt="" class="t-arrow ms-1"> </span> </a>
                         </div>
                     </div>
                 </div>
@@ -261,16 +262,16 @@
                         <div class="row justify-content-between">
                             <div class="col-lg-7">
                                 <div class="section-head-st1 mb-30 js-splittext-lines pe-lg-5">
-                                    <h6 class="fsz-20 cr-gold1 mb-15"> <span class="icon-20 me-1"> <img src="assets/img/fav_gold.svg" alt=""> </span> Gactour feature </h6>
+                                    <h6 class="fsz-20 cr-gold1 mb-15"> <span class="icon-20 me-1"> <img src="{% static 'assets/img/fav_gold.svg' %}" alt=""> </span> Gactour feature </h6>
                                     <h2 class="fsz-50"> Trends and Innovations </h2>
                                     <div class="text fsz-16 cr-999"> It seems like you're asking for ideas or information on creating a title related to architecture. Could you specify the context? For example, are you looking. </div>
-                                    <a href="#" class="butn border brd-light hover-bg-gold1 rounded-pill px-4 mt-30"> <span> View All <img src="assets/img/t-arrow.svg" alt="" class="t-arrow ms-1"> </span> </a>
+                                    <a href="#" class="butn border brd-light hover-bg-gold1 rounded-pill px-4 mt-30"> <span> View All <img src="{% static 'assets/img/t-arrow.svg' %}" alt="" class="t-arrow ms-1"> </span> </a>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <a href="#" class="feat-card mt-0 wow fadeInUp slow" data-wow-delay="0.1s">
                                     <div class="icon icon-90 mb-60">
-                                        <img src="assets/img/icons/ft1.svg" alt="">
+                                        <img src="{% static 'assets/img/icons/ft1.svg' %}" alt="">
                                     </div>
                                     <div class="info">
                                         <h6 class="fsz-24 mb-10"> Sustainable Architecture </h6>
@@ -285,7 +286,7 @@
                             <div class="col-lg-4">
                                 <a href="#" class="feat-card wow fadeInUp slow" data-wow-delay="0.2s">
                                     <div class="icon icon-90 mb-60">
-                                        <img src="assets/img/icons/ft2.svg" alt="">
+                                        <img src="{% static 'assets/img/icons/ft2.svg' %}" alt="">
                                     </div>
                                     <div class="info">
                                         <h6 class="fsz-24 mb-10"> Innovative Construction </h6>
@@ -296,7 +297,7 @@
                             <div class="col-lg-4">
                                 <a href="#" class="feat-card wow fadeInUp slow" data-wow-delay="0.3s">
                                     <div class="icon icon-90 mb-60">
-                                        <img src="assets/img/icons/ft3.svg" alt="">
+                                        <img src="{% static 'ssets/img/icons/ft3.svg' %}" alt="">
                                     </div>
                                     <div class="info">
                                         <h6 class="fsz-24 mb-10"> Biophilic Design </h6>
@@ -307,7 +308,7 @@
                             <div class="col-lg-4">
                                 <a href="#" class="feat-card wow fadeInUp slow" data-wow-delay="0.4s">
                                     <div class="icon icon-90 mb-60">
-                                        <img src="assets/img/icons/ft4.svg" alt="">
+                                        <img src="{% static 'assets/img/icons/ft4.svg' %}" alt="">
                                     </div>
                                     <div class="info">
                                         <h6 class="fsz-24 mb-10"> Urban Planning </h6>
@@ -333,7 +334,7 @@
                         <div class="row justify-content-between">
                             <div class="col-lg-6">
                                 <div class="main-img th-600">
-                                    <img src="assets/img/ab1.jpg" alt="" class="img-cover wow clippy-img">
+                                    <img src="{% static 'assets/img/ab1.jpg' %}" alt="" class="img-cover wow clippy-img">
                                 </div>
                             </div>
                             <div class="col-lg-5">
@@ -352,7 +353,7 @@
                                         </div>
                                     </div>
                                     <div class="main-img th-350 mt-80">
-                                        <img src="assets/img/ab2.jpg" alt="" class="img-cover wow clippy-img">
+                                        <img src="{% static 'assets/img/ab2.jpg' %}" alt="" class="img-cover wow clippy-img">
                                     </div>
                                 </div>
                             </div>
@@ -368,7 +369,7 @@
             <section class="tc-features-st2">
                 <div class="container">
                     <div class="section-head-st1 mb-30 js-splittext-lines col-lg-4">
-                        <h6 class="fsz-20 cr-gold1 mb-15"> <span class="icon-20 me-1"> <img src="assets/img/fav_gold.svg" alt=""> </span> Gactour feature </h6>
+                        <h6 class="fsz-20 cr-gold1 mb-15"> <span class="icon-20 me-1"> <img src="{% static 'assets/img/fav_gold.svg' %}" alt=""> </span> Gactour feature </h6>
                         <h2 class="fsz-50"> Trusted Architectural Best Work. </h2>
                     </div>
                     <div class="cards-box col-lg-9">
@@ -376,7 +377,7 @@
                             <div class="col-lg-5">
                                 <div class="item wow fadeInUp slow" data-wow-delay="0.1s">
                                     <div class="icon">
-                                        <img src="assets/img/icons/ft5.svg" alt="">
+                                        <img src="{% static 'assets/img/icons/ft5.svg' %}" alt="">
                                     </div>
                                     <div class="cont">
                                         <h6 class="fsz-24 mb-10"> Innovative Design </h6>
@@ -387,7 +388,7 @@
                             <div class="col-lg-5">
                                 <div class="item wow fadeInUp slow" data-wow-delay="0.2s">
                                     <div class="icon">
-                                        <img src="assets/img/icons/ft6.svg" alt="">
+                                        <img src="{% static 'assets/img/icons/ft6.svg' %}" alt="">
                                     </div>
                                     <div class="cont">
                                         <h6 class="fsz-24 mb-10"> Architectural Drawing </h6>
@@ -398,7 +399,7 @@
                             <div class="col-lg-5">
                                 <div class="item wow fadeInUp slow" data-wow-delay="0.3s">
                                     <div class="icon">
-                                        <img src="assets/img/icons/ft7.svg" alt="">
+                                        <img src="{% static 'assets/img/icons/ft7.svg' %}" alt="">
                                     </div>
                                     <div class="cont">
                                         <h6 class="fsz-24 mb-10"> 3D Model Building </h6>
@@ -409,7 +410,7 @@
                             <div class="col-lg-5">
                                 <div class="item wow fadeInUp slow" data-wow-delay="0.4s">
                                     <div class="icon">
-                                        <img src="assets/img/icons/ft8.svg" alt="">
+                                        <img src="{% static 'assets/img/icons/ft8.svg' %}" alt="">
                                     </div>
                                     <div class="cont">
                                         <h6 class="fsz-24 mb-10"> Building The Space </h6>
@@ -418,10 +419,10 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#" class="butn border brd-light hover-bg-gold1 rounded-pill px-4"> <span> Learn More <img src="assets/img/t-arrow.svg" alt="" class="t-arrow ms-1"> </span> </a>
+                        <a href="#" class="butn border brd-light hover-bg-gold1 rounded-pill px-4"> <span> Learn More <img src="{% static 'assets/img/t-arrow.svg' %}" alt="" class="t-arrow ms-1"> </span> </a>
                     </div>
                 </div>
-                <img src="assets/img/feat1.jpg" alt="" class="float-img">
+                <img src="{% static 'assets/img/feat1.jpg' %}" alt="" class="float-img">
                 <div class="lines-st2"><span></span><span></span></div>
             </section>
             <!--  End features  -->
@@ -432,7 +433,7 @@
                 <div class="container">
                     <div class="title-wrapper col-lg-6 mx-auto mb-80">
                         <div class="section-head-st1 mb-30 js-splittext-lines text-center">
-                            <h6 class="fsz-20 cr-gold1 mb-15"> <span class="icon-20 me-1"> <img src="assets/img/fav_gold.svg" alt=""> </span> Our Portfolio </h6>
+                            <h6 class="fsz-20 cr-gold1 mb-15"> <span class="icon-20 me-1"> <img src="{% static 'assets/img/fav_gold.svg' %}" alt=""> </span> Our Portfolio </h6>
                             <h2 class="fsz-50"> Showcasing Our Architectural </h2>
                         </div>
                         <div class="check-nav">
@@ -467,7 +468,7 @@
                             <div class="swiper-slide">
                                 <a href="#" class="portfolio-card">
                                     <div class="img">
-                                        <img src="assets/img/portfolio/1.jpg" alt="" class="img-cover">
+                                        <img src="{% static 'assets/img/portfolio/1.jpg' %}" alt="" class="img-cover">
                                     </div>
                                     <div class="num"> 01 </div>
                                     <h3 class="card-title"> Retail and Hospitality </h3>
@@ -476,7 +477,7 @@
                             <div class="swiper-slide">
                                 <a href="#" class="portfolio-card">
                                     <div class="img">
-                                        <img src="assets/img/portfolio/2.jpg" alt="" class="img-cover">
+                                        <img src="{% static 'assets/img/portfolio/2.jpg' %}" alt="" class="img-cover">
                                     </div>
                                     <div class="num"> 02 </div>
                                     <h3 class="card-title"> Retail and Hospitality </h3>
@@ -485,7 +486,7 @@
                             <div class="swiper-slide">
                                 <a href="#" class="portfolio-card">
                                     <div class="img">
-                                        <img src="assets/img/portfolio/3.jpg" alt="" class="img-cover">
+                                        <img src="{% static 'assets/img/portfolio/3.jpg' %}" alt="" class="img-cover">
                                     </div>
                                     <div class="num"> 03 </div>
                                     <h3 class="card-title"> Retail and Hospitality </h3>
@@ -518,27 +519,27 @@
                 <div class="container">
                     <div class="cards">
                         <a href="#" class="item wow fadeInUp slow" data-wow-delay="0.1s">
-                            <div class="icon"> <img src="assets/img/icons/w1.svg" alt=""> </div>
+                            <div class="icon"> <img src="{% static 'assets/img/icons/w1.svg' %}" alt=""> </div>
                             <h3 class="title"> "Luxury Interior Design Awards" </h3>
                             <span class="year"> 2024 </span>
                         </a>
                         <a href="#" class="item wow fadeInUp slow" data-wow-delay="0.2s">
-                            <div class="icon"> <img src="assets/img/icons/w2.svg" alt=""> </div>
+                            <div class="icon"> <img src="{% static 'assets/img/icons/w2.svg' %}" alt=""> </div>
                             <h3 class="title"> "Emerging Architect Award" </h3>
                             <span class="year"> 2022 </span>
                         </a>
                         <a href="#" class="item wow fadeInUp slow" data-wow-delay="0.3s">
-                            <div class="icon"> <img src="assets/img/icons/w3.svg" alt=""> </div>
+                            <div class="icon"> <img src="{% static 'assets/img/icons/w3.svg' %}" alt=""> </div>
                             <h3 class="title"> "Cutting-Edge Interior Design Award" </h3>
                             <span class="year"> 2020 </span>
                         </a>
                         <a href="#" class="item wow fadeInUp slow" data-wow-delay="0.4s">
-                            <div class="icon"> <img src="assets/img/icons/w4.svg" alt=""> </div>
+                            <div class="icon"> <img src="{% static 'assets/img/icons/w4.svg' %}" alt=""> </div>
                             <h3 class="title"> "Green Building Excellence Award" </h3>
                             <span class="year"> 2018 </span>
                         </a>
                         <a href="#" class="item wow fadeInUp slow" data-wow-delay="0.5s">
-                            <div class="icon"> <img src="assets/img/icons/w5.svg" alt=""> </div>
+                            <div class="icon"> <img src="{% static 'assets/img/icons/w5.svg' %}" alt=""> </div>
                             <h3 class="title"> "Architectural Innovation Award" </h3>
                             <span class="year"> 2016 </span>
                         </a>
@@ -554,7 +555,7 @@
                     <span class="txt fsz-30 text-capitalize"> Watch Video </span>
                     <span class="icon"> <i class="fas fa-play"></i> </span>
                 </a>
-                <img src="assets/img/video_bg.jpg" alt="" class="bg">
+                <img src="{% static 'assets/img/video_bg.jpg' %}" alt="" class="bg">
                 <div class="lines-st2"><span></span><span></span></div>
             </section>
             <!--  End video  -->
@@ -587,7 +588,7 @@
                                             <div class="col-lg-8">
                                                 <div class="user-wrapper d-flex align-items-center">
                                                     <div class="avatar icon-50 me-4">
-                                                        <img src="assets/img/avatar.jpg" alt="" class="img-cover rounded-circle">
+                                                        <img src="{% static 'assets/img/avatar.jpg' %}" alt="" class="img-cover rounded-circle">
                                                     </div>
                                                     <div class="user-info">
                                                         <div class="txt fsz-16 text-uppercase"> William Andrew </div>
@@ -596,7 +597,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-lg-4 mt-5 mt-lg-0 text-lg-end">
-                                                <span class="qt icon-50"> <img src="assets/img/icons/qt.svg" alt="" class="img-contain"> </span>
+                                                <span class="qt icon-50"> <img src="{% static 'assets/img/icons/qt.svg' %}" alt="" class="img-contain"> </span>
                                             </div>
                                         </div>
                                     </div>
@@ -623,7 +624,7 @@
                                             <div class="col-lg-8">
                                                 <div class="user-wrapper d-flex align-items-center">
                                                     <div class="avatar icon-50 me-4">
-                                                        <img src="assets/img/avatar.jpg" alt="" class="img-cover rounded-circle">
+                                                        <img src="{% static 'assets/img/avatar.jpg' %}" alt="" class="img-cover rounded-circle">
                                                     </div>
                                                     <div class="user-info">
                                                         <div class="txt fsz-16 text-uppercase"> William Andrew </div>
@@ -632,7 +633,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-lg-4 mt-5 mt-lg-0 text-lg-end">
-                                                <span class="qt icon-50"> <img src="assets/img/icons/qt.svg" alt="" class="img-contain"> </span>
+                                                <span class="qt icon-50"> <img src="{% static 'assets/img/icons/qt.svg' %}" alt="" class="img-contain"> </span>
                                             </div>
                                         </div>
                                     </div>
@@ -650,7 +651,7 @@
             <section class="tc-blog-st2">
                 <div class="container">
                     <div class="section-head-st1 mb-50 js-splittext-lines col-lg-6 mx-auto text-center">
-                        <h6 class="fsz-20 cr-gold1 mb-15"> <span class="icon-20 me-1"> <img src="assets/img/fav_gold.svg" alt=""> </span> our blog </h6>
+                        <h6 class="fsz-20 cr-gold1 mb-15"> <span class="icon-20 me-1"> <img src="{% static 'assets/img/fav_gold.svg' %}" alt=""> </span> our blog </h6>
                         <h2 class="fsz-50"> Insights and Inspirations in Architecture </h2>
                     </div>
                     <div class="cards">
@@ -667,7 +668,7 @@
                                     <h3 class="blog-title fsz-30"> Stay up-to-date with the latest happenings. </h3>
                                 </div>
                             </div>
-                            <img src="assets/img/post1.jpg" alt="" class="float-img">
+                            <img src="{% static 'assets/img/post1.jpg' %}" alt="" class="float-img">
                             <span class="arrow dnf-center"> <i class="fal fa-arrow-up-right"></i> </span>
                         </a>
                         <a href="#" class="item wow fadeInUp slow" data-wow-delay="0.2s">
@@ -683,7 +684,7 @@
                                     <h3 class="blog-title fsz-30"> Excellence in Restoration and Preservation Award of the Year </h3>
                                 </div>
                             </div>
-                            <img src="assets/img/post1.jpg" alt="" class="float-img">
+                            <img src="{% static 'assets/img/post1.jpg' %}" alt="" class="float-img">
                             <span class="arrow dnf-center"> <i class="fal fa-arrow-up-right"></i> </span>
                         </a>
                         <a href="#" class="item wow fadeInUp slow" data-wow-delay="0.3s">
@@ -699,7 +700,7 @@
                                     <h3 class="blog-title fsz-30"> Cultural Influence in Architecture Building Stories Through Design </h3>
                                 </div>
                             </div>
-                            <img src="assets/img/post1.jpg" alt="" class="float-img">
+                            <img src="{% static 'assets/img/post1.jpg' %}" alt="" class="float-img">
                             <span class="arrow dnf-center"> <i class="fal fa-arrow-up-right"></i> </span>
                         </a>
                         <a href="#" class="item wow fadeInUp slow" data-wow-delay="0.4s">
@@ -715,7 +716,7 @@
                                     <h3 class="blog-title fsz-30"> The Intersection of Art and Function Exploring Modern Architecture </h3>
                                 </div>
                             </div>
-                            <img src="assets/img/post1.jpg" alt="" class="float-img">
+                            <img src="{% static 'assets/img/post1.jpg' %}" alt="" class="float-img">
                             <span class="arrow dnf-center"> <i class="fal fa-arrow-up-right"></i> </span>
                         </a>
                     </div>
@@ -730,22 +731,22 @@
                     <div class="sm-title col-lg-7 mx-auto"> <span class="txt"> Our Website <span class="cr-gold1"> 75000+ </span> VIP Customer </span> </div>
                     <div class="brands">
                         <a href="#" class="brand wow fadeInUp slow" data-wow-delay="0.1s">
-                            <img src="assets/img/brands/1.svg" alt="">
+                            <img src="{% static 'assets/img/brands/1.svg' %}" alt="">
                         </a>
                         <a href="#" class="brand wow fadeInUp slow" data-wow-delay="0.2s">
-                            <img src="assets/img/brands/2.svg" alt="">
+                            <img src="{% static 'assets/img/brands/2.svg' %}" alt="">
                         </a>
                         <a href="#" class="brand wow fadeInUp slow" data-wow-delay="0.3s">
-                            <img src="assets/img/brands/3.svg" alt="">
+                            <img src="{% static 'assets/img/brands/3.svg' %}" alt="">
                         </a>
                         <a href="#" class="brand wow fadeInUp slow" data-wow-delay="0.4s">
-                            <img src="assets/img/brands/4.svg" alt="">
+                            <img src="{% static 'assets/img/brands/4.svg' %}" alt="">
                         </a>
                         <a href="#" class="brand wow fadeInUp slow" data-wow-delay="0.5s">
-                            <img src="assets/img/brands/5.svg" alt="">
+                            <img src="{% static 'assets/img/brands/5.svg' %}" alt="">
                         </a>
                         <a href="#" class="brand wow fadeInUp slow" data-wow-delay="0.6s">
-                            <img src="assets/img/brands/6.svg" alt="">
+                            <img src="{% static 'assets/img/brands/6.svg' %}" alt="">
                         </a>
                     </div>
                 </div>
@@ -765,7 +766,7 @@
                             <div class="foot-info mb-30">
                                 <h3 class="fsz-30 text-pretty"> Start Your journey with us </h3>
                                 <div class="text fsz-16 cr-999 mt-15"> Cutting-Edge Interior Design Award. </div>
-                                <a href="#" class="butn bg-gold1 rounded-pill mt-40"> <span> Contact Us <img src="assets/img/t-arrow.svg" alt="" class="t-arrow ms-1"> </span> </a>
+                                <a href="#" class="butn bg-gold1 rounded-pill mt-40"> <span> Contact Us <img src="{% static 'assets/img/t-arrow.svg' %}" alt="" class="t-arrow ms-1"> </span> </a>
                             </div>
                         </div>
                         <div class="col-lg-2">
@@ -798,7 +799,7 @@
                                     <h6 class="fsz-20 mb-15"> Sign up newsletter </h6>
                                     <div class="form-group">
                                         <input type="text" class="form-control" placeholder="Inter Your Email">
-                                        <a href="#" class="butn bg-gold1 rounded-pill py-2 px-4"> <span> <img src="assets/img/t-arrow.svg" alt="" class="t-arrow"> </span> </a>
+                                        <a href="#" class="butn bg-gold1 rounded-pill py-2 px-4"> <span> <img src="{% static 'assets/img/t-arrow.svg' %}" alt="" class="t-arrow"> </span> </a>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -820,7 +821,7 @@
                         </div>
                         <div class="col-lg-2">
                             <div class="foot-logo text-center my-4 my-lg-0">
-                                <img src="assets/img/logo.svg" alt="" class="th-50">
+                                <img src="{% static 'assets/img/logo.svg' %}" alt="" class="th-50">
                             </div>
                         </div>
                         <div class="col-lg-5">
@@ -835,7 +836,7 @@
                 </div>
                 <div class="lines-st2"><span></span><span></span></div>
             </div>
-            <img src="assets/img/foot_shap.png" alt="" class="foot-shap">
+            <img src="{% static 'assets/img/foot_shap.png' %}" alt="" class="foot-shap">
         </footer>
         <!--  End footer  -->
 

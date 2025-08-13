@@ -10,6 +10,9 @@ from .models import Profile
 def homeview(request):
     return render(request, 'home1/index.html')
 
+def aboutview(request):
+    return render(request, 'innerpages/about.html')
+
 def signup(request):
     if request.method == 'POST':
         form = CustomUserCreationForm(request.POST)
@@ -58,3 +61,44 @@ def user_logout(request):
     messages.success(request, "You have been logged out.")
     return redirect('login')
 
+
+# done by Umar.........
+
+def blogasideview(request):
+    return render(request, 'innerpages/blog_aside.html')
+
+def blogdetview(request):
+    return render(request, 'innerpages/blog_det.html')
+
+def blogview(request):
+    return render(request, 'innerpages/blog.html')
+
+def contactview(request):
+    return render(request, 'innerpages/contact.html')
+
+def faqview(request):
+    return render(request, 'innerpages/faq.html')
+
+def projectview(request):
+    return render(request, 'innerpages/projects.html')
+
+def projectdetview(request):
+    return render(request, 'innerpages/project_det.html')
+
+def projects2view(request):
+    return render(request, 'innerpages/projects2.html')
+
+def serviceview(request):
+    return render(request, 'innerpages/service.html')
+
+def servicedetview(request):
+    return render(request, 'innerpages/service_det.html')
+
+def services2view(request):
+    return render(request, 'innerpages/services2.html')
+
+def teamview(request):
+    return render(request, 'innerpages/team.html')
+
+def testimonialsview(request):
+    return render(request, 'innerpages/testimonials.html')

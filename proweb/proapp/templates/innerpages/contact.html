@@ -4,6 +4,7 @@
 
 <!-- Mirrored from uicamp.smartinnovates.net/i/gactur-html/innerpages/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Aug 2025 08:04:07 GMT -->
 <head>
+    {% load static %}
     <!-- Metas -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,10 +38,10 @@
     <link rel="stylesheet" href="../common/assets/css/lib/swiper8.min.css">
 
     <!-- common style -->
-    <link rel="stylesheet" href="../common/assets/css/common_style.css">
+    <link rel="stylesheet" href="{% static '../common/assets/css/common_style.css' %}">
 
     <!-- style -->
-    <link rel="stylesheet" href="../common/assets/css/style.css">
+    <link rel="stylesheet" href="{% static '../common/assets/css/style.css' %}">
 
 </head>
 
@@ -68,9 +69,9 @@
             </ul>
         </div>
         <span class="white-line"></span>
-        <img src="../common/assets/img/contact.png" alt="" class="cube img-cover">
+        <img src="{% static '../common/assets/img/contact.png' %}" alt="" class="cube img-cover">
         <span class="clss"> <i class="fal fa-times"></i> </span>
-        <img src="../common/assets/img/logo_wh.svg" alt="" class="logo">
+        <img src="{% static '../common/assets/img/logo_wh.svg' %}" alt="" class="logo">
     </div>
     <!--  End sidemenu  -->
 
@@ -108,7 +109,7 @@
         <nav class="navbar navbar-expand-lg tc-navbar-st1 bg-111 position-relative">
             <div class="container-fluid">
                 <a class="navbar-brand me-lg-5" href="#">
-                    <img src="assets/img/logo_wh.svg" alt="" class="logo">
+                    <img src="{% static 'assets/img/logo_wh.svg' %}" alt="" class="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -207,7 +208,7 @@
                     <h1 class="title"> Contact Us </h1>
                     <div class="info-card">
                         <div class="avatar icon-80 rounded-circle overflow-hidden me-20 flex-shrink-0">
-                            <img src="assets/img/hero1.jpg" alt="" class="img-cover">
+                            <img src="{% static 'assets/img/hero1.jpg' %}" alt="" class="img-cover">
                         </div>
                         <div class="cont">
                             <h6 class="fsz-20 mb-1"> Our company Architect  Firm </h6>
@@ -235,7 +236,7 @@
                             <div class="col-lg-7 order-last order-lg-0">
                                 <form action="#" class="form">
                                     <div class="section-head-st1 mb-30 js-splittext-lines">
-                                        <h6 class="fsz-20 cr-gold1 mb-15"> <span class="icon-20 me-1"> <img src="assets/img/fav_gold.svg" alt=""> </span>  Contact With Us </h6>
+                                        <h6 class="fsz-20 cr-gold1 mb-15"> <span class="icon-20 me-1"> <img src="{% static 'assets/img/fav_gold.svg' %}" alt=""> </span>  Contact With Us </h6>
                                         <h2 class="fsz-50 col-lg-8"> Join the Community to Know Us </h2>
                                     </div>
                                     <div class="row">
@@ -265,7 +266,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="#" class="butn bg-gold1 rounded-pill px-4 mt-4"> <span> Submit Now <img src="assets/img/t-arrow.svg" alt="" class="t-arrow ms-1"> </span> </a>
+                                    <a href="#" class="butn bg-gold1 rounded-pill px-4 mt-4"> <span> Submit Now <img src="{% static 'assets/img/t-arrow.svg' %}" alt="" class="t-arrow ms-1"> </span> </a>
                                 </form>
                             </div>
                             <div class="col-lg-4">
@@ -306,22 +307,22 @@
                     <div class="sm-title col-lg-7 mx-auto"> <span class="txt"> Our Website <span class="cr-gold1"> 75000+ </span> VIP Customer </span> </div>
                     <div class="brands">
                         <a href="#" class="brand wow fadeInUp slow" data-wow-delay="0.1s">
-                            <img src="assets/img/brands/1.svg" alt="">
+                            <img src="{% static 'assets/img/brands/1.svg' %}" alt="">
                         </a>
                         <a href="#" class="brand wow fadeInUp slow" data-wow-delay="0.2s">
-                            <img src="assets/img/brands/2.svg" alt="">
+                            <img src="{% static 'assets/img/brands/2.svg' %}" alt="">
                         </a>
                         <a href="#" class="brand wow fadeInUp slow" data-wow-delay="0.3s">
-                            <img src="assets/img/brands/3.svg" alt="">
+                            <img src="{% static 'assets/img/brands/3.svg' %}" alt="">
                         </a>
                         <a href="#" class="brand wow fadeInUp slow" data-wow-delay="0.4s">
-                            <img src="assets/img/brands/4.svg" alt="">
+                            <img src="{% static 'assets/img/brands/4.svg' %}" alt="">
                         </a>
                         <a href="#" class="brand wow fadeInUp slow" data-wow-delay="0.5s">
-                            <img src="assets/img/brands/5.svg" alt="">
+                            <img src="{% static 'assets/img/brands/5.svg' %}" alt="">
                         </a>
                         <a href="#" class="brand wow fadeInUp slow" data-wow-delay="0.6s">
-                            <img src="assets/img/brands/6.svg" alt="">
+                            <img src="{% static 'assets/img/brands/6.svg' %}" alt="">
                         </a>
                     </div>
                 </div>

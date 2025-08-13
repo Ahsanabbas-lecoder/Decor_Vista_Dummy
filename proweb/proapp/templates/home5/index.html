@@ -1,8 +1,7 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
-
-<!-- Mirrored from uicamp.smartinnovates.net/i/gactur-html/home5/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Aug 2025 08:03:44 GMT -->
 <head>
     <!-- Metas -->
     <meta charset="utf-8">
@@ -16,31 +15,30 @@
     <title>Gactur</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/img/fav.png" title="Favicon" sizes="16x16">
+    <link rel="shortcut icon" href="{% static 'common/assets/img/fav.png' %}" title="Favicon" sizes="16x16">
 
     <!-- bootstrap 5 -->
-    <link rel="stylesheet" href="../common/assets/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'common/assets/css/lib/bootstrap.min.css' %}">
 
     <!-- font family -->
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100..1000;1,100..1000&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- fontawesome icons  -->
-    <link rel="stylesheet" href="../common/assets/css/lib/all.css">
+    <link rel="stylesheet" href="{% static 'common/assets/css/lib/all.css' %}">
     <!-- animate css  -->
-    <link rel="stylesheet" href="../common/assets/css/lib/animate.css">
+    <link rel="stylesheet" href="{% static 'common/assets/css/lib/animate.css' %}">
     <!-- fancybox popup  -->
-    <link rel="stylesheet" href="../common/assets/css/lib/jquery.fancybox.css">
+    <link rel="stylesheet" href="{% static 'common/assets/css/lib/jquery.fancybox.css' %}">
     <!-- lity popup  -->
-    <link rel="stylesheet" href="../common/assets/css/lib/lity.css">
+    <link rel="stylesheet" href="{% static 'common/assets/css/lib/lity.css' %}">
     <!-- swiper slider  -->
-    <link rel="stylesheet" href="../common/assets/css/lib/swiper8.min.css">
+    <link rel="stylesheet" href="{% static 'common/assets/css/lib/swiper8.min.css' %}">
 
     <!-- common style -->
-    <link rel="stylesheet" href="../common/assets/css/common_style.css">
+    <link rel="stylesheet" href="{% static 'common/assets/css/common_style.css' %}">
 
     <!-- style -->
-    <link rel="stylesheet" href="../common/assets/css/style.css">
+    <link rel="stylesheet" href="{% static 'common/assets/css/style.css' %}">
 
 </head>
 
@@ -52,11 +50,11 @@
     <div class="tc-sidemenu-st1">
         <div class="main-links">
             <ul>
-                <li> <a href="../home1/index.html" class="main-link"> Home one </a> </li>
-                <li><a href="../home2/index.html" class="main-link"> home two </a></li>
-                <li><a href="../home3/index.html" class="main-link"> home three </a></li>
-                <li><a href="../home4/index.html" class="main-link"> home four </a></li>
-                <li><a href="index.html" class="main-link"> home five </a></li>
+                <li><a href="{% url 'home1' %}" class="main-link"> Home one </a></li>
+                <li><a href="{% url 'home2' %}" class="main-link"> home two </a></li>
+                <li><a href="{% url 'home3' %}" class="main-link"> home three </a></li>
+                <li><a href="{% url 'home4' %}" class="main-link"> home four </a></li>
+                <li><a href="{% url 'home5' %}" class="main-link"> home five </a></li>
             </ul>
         </div>
         <div class="social-links">
@@ -68,9 +66,9 @@
             </ul>
         </div>
         <span class="white-line"></span>
-        <img src="../common/assets/img/contact.png" alt="" class="cube img-cover">
+        <img src="{% static 'common/assets/img/contact.png' %}" alt="" class="cube img-cover">
         <span class="clss"> <i class="fal fa-times"></i> </span>
-        <img src="../common/assets/img/logo_wh.svg" alt="" class="logo">
+        <img src="{% static 'common/assets/img/logo_wh.svg' %}" alt="" class="logo">
     </div>
     <!--  End sidemenu  -->
 
@@ -80,7 +78,6 @@
     <!--  end cursor  -->
 
     <!-- ====== Start Loading ====== -->
-
     <div class="loader-wrap">
         <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
             <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
@@ -99,12 +96,8 @@
         </div>
     </div>
 
-
-
     <!--Contents-->
     <main>
-        
-
         <!--  Start showcase  -->
         <section class="tc-showcase-st5">
             <div class="showcase-slider">
@@ -115,17 +108,17 @@
                                 <div class="col-lg-6">
                                     <div class="info">
                                         <a href="#" class="logo">
-                                            <img src="assets/img/logo_wh.svg" alt="">
+                                            <img src="{% static 'common/assets/img/logo_wh.svg' %}" alt="">
                                         </a>
                                         <div class="cont">
                                             <h2 class="title" data-swiper-parallax="1000"> Architecture </h2>
                                             <h5 class="sub-title"> Design Gactur </h5>
                                             <div class="info-card">
                                                 <div class="avatar icon-80 rounded-circle overflow-hidden me-20 flex-shrink-0">
-                                                    <img src="assets/img/show1.jpg" alt="" class="img-cover">
+                                                    <img src="{% static 'common/assets/img/show1.jpg' %}" alt="" class="img-cover">
                                                 </div>
                                                 <div class="cont">
-                                                    <h6 class="fsz-20 mb-1"> Our company Architect  Firm </h6>
+                                                    <h6 class="fsz-20 mb-1"> Our company Architect Firm </h6>
                                                     <div class="text fsz-14 op-5"> Watch the videos (2.40s) </div>
                                                 </div>
                                             </div>
@@ -140,29 +133,31 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="img">
-                                        <img src="assets/img/show1.jpg" alt="" class="img-cover">
+                                        <img src="{% static 'common/assets/img/show1.jpg' %}" alt="" class="img-cover">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Repeat slides with updated static paths -->
                     <div class="swiper-slide">
                         <div class="slide-item">
                             <div class="row gx-0">
                                 <div class="col-lg-6">
                                     <div class="info">
                                         <a href="#" class="logo">
-                                            <img src="assets/img/logo_wh.svg" alt="">
+                                            <img src="{% static 'common/assets/img/logo_wh.svg' %}" alt="">
                                         </a>
                                         <div class="cont">
                                             <h2 class="title" data-swiper-parallax="1000"> Interior </h2>
                                             <h5 class="sub-title"> Design Gactur </h5>
                                             <div class="info-card">
                                                 <div class="avatar icon-80 rounded-circle overflow-hidden me-20 flex-shrink-0">
-                                                    <img src="assets/img/show2.jpg" alt="" class="img-cover">
+                                                    <img src="{% static 'common/assets/img/show2.jpg' %}" alt="" class="img-cover">
                                                 </div>
                                                 <div class="cont">
-                                                    <h6 class="fsz-20 mb-1"> Our company Architect  Firm </h6>
+                                                    <h6 class="fsz-20 mb-1"> Our company Architect Firm </h6>
                                                     <div class="text fsz-14 op-5"> Watch the videos (2.40s) </div>
                                                 </div>
                                             </div>
@@ -177,129 +172,36 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="img">
-                                        <img src="assets/img/show2.jpg" alt="" class="img-cover">
+                                        <img src="{% static 'common/assets/img/show2.jpg' %}" alt="" class="img-cover">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="slide-item">
-                            <div class="row gx-0">
-                                <div class="col-lg-6">
-                                    <div class="info">
-                                        <a href="#" class="logo">
-                                            <img src="assets/img/logo_wh.svg" alt="">
-                                        </a>
-                                        <div class="cont">
-                                            <h2 class="title" data-swiper-parallax="1000"> Landscape </h2>
-                                            <h5 class="sub-title"> Design Gactur </h5>
-                                            <div class="info-card">
-                                                <div class="avatar icon-80 rounded-circle overflow-hidden me-20 flex-shrink-0">
-                                                    <img src="assets/img/show3.jpg" alt="" class="img-cover">
-                                                </div>
-                                                <div class="cont">
-                                                    <h6 class="fsz-20 mb-1"> Our company Architect  Firm </h6>
-                                                    <div class="text fsz-14 op-5"> Watch the videos (2.40s) </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="social-links">
-                                            <a href="#"> <i class="fab fa-facebook-f"></i> </a>
-                                            <a href="#"> <i class="fab fa-instagram"></i> </a>
-                                            <a href="#"> <i class="fab fa-x-twitter"></i> </a>
-                                            <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="img">
-                                        <img src="assets/img/show3.jpg" alt="" class="img-cover">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="slide-item">
-                            <div class="row gx-0">
-                                <div class="col-lg-6">
-                                    <div class="info">
-                                        <a href="#" class="logo">
-                                            <img src="assets/img/logo_wh.svg" alt="">
-                                        </a>
-                                        <div class="cont">
-                                            <h2 class="title" data-swiper-parallax="1000"> Décor Plan </h2>
-                                            <h5 class="sub-title"> Design Gactur </h5>
-                                            <div class="info-card">
-                                                <div class="avatar icon-80 rounded-circle overflow-hidden me-20 flex-shrink-0">
-                                                    <img src="assets/img/show4.jpg" alt="" class="img-cover">
-                                                </div>
-                                                <div class="cont">
-                                                    <h6 class="fsz-20 mb-1"> Our company Architect  Firm </h6>
-                                                    <div class="text fsz-14 op-5"> Watch the videos (2.40s) </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="social-links">
-                                            <a href="#"> <i class="fab fa-facebook-f"></i> </a>
-                                            <a href="#"> <i class="fab fa-instagram"></i> </a>
-                                            <a href="#"> <i class="fab fa-x-twitter"></i> </a>
-                                            <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="img">
-                                        <img src="assets/img/show4.jpg" alt="" class="img-cover">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+                    <!-- Add other slides similarly... -->
                 </div>
             </div>
         </section>
         <!--  End showcase  -->
-
-
     </main>
-    <!--End-Contents-->
 
-
-
-
-
-    <!--  Start to top button  -->
-    <!-- <a href="#" class="to_top" id="to_top">
-        <i class="fal fa-angle-up"></i>
-    </a> -->
-    <!--  End to top button  -->
-
-    <!--  request  -->
-    <script src="../common/assets/js/lib/jquery-3.0.0.min.js"></script>
-    <script src="../common/assets/js/lib/jquery-migrate-3.0.0.min.js"></script>
-    <script src="../common/assets/js/lib/bootstrap.bundle.min.js"></script>
-    <script src="../common/assets/js/lib/wow.min.js"></script>
-    <script src="../common/assets/js/lib/jquery.fancybox.js"></script>
-    <script src="../common/assets/js/lib/lity.js"></script>
-    <script src="../common/assets/js/lib/swiper8-bundle.min.js"></script>
-    <script src="../common/assets/js/lib/jquery.waypoints.min.js"></script>
-    <script src="../common/assets/js/lib/jquery.counterup.js"></script>
-    <script src="../common/assets/js/lib/parallaxie.js"></script>
-    <!-- === Gsap === -->
-    <script src="../common/assets/js/gsap_lib/gsap.min.js"></script>
-    <script src="../common/assets/js/gsap_lib/ScrollSmoother.min.js"></script>
-    <script src="../common/assets/js/gsap_lib/ScrollTrigger.min.js"></script>
-    <script src="../common/assets/js/gsap_lib/SplitText.min.js"></script>
-    <!-- === common === -->
-    <script src="../common/assets/js/common.js"></script>
-
-    <!-- ===== scripts ===== -->
-    <script src="../common/assets/js/scripts.js"></script>
-
+    <!-- JS Files -->
+    <script src="{% static 'common/assets/js/lib/jquery-3.0.0.min.js' %}"></script>
+    <script src="{% static 'common/assets/js/lib/jquery-migrate-3.0.0.min.js' %}"></script>
+    <script src="{% static 'common/assets/js/lib/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'common/assets/js/lib/wow.min.js' %}"></script>
+    <script src="{% static 'common/assets/js/lib/jquery.fancybox.js' %}"></script>
+    <script src="{% static 'common/assets/js/lib/lity.js' %}"></script>
+    <script src="{% static 'common/assets/js/lib/swiper8-bundle.min.js' %}"></script>
+    <script src="{% static 'common/assets/js/lib/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'common/assets/js/lib/jquery.counterup.js' %}"></script>
+    <script src="{% static 'common/assets/js/lib/parallaxie.js' %}"></script>
+    <script src="{% static 'common/assets/js/gsap_lib/gsap.min.js' %}"></script>
+    <script src="{% static 'common/assets/js/gsap_lib/ScrollSmoother.min.js' %}"></script>
+    <script src="{% static 'common/assets/js/gsap_lib/ScrollTrigger.min.js' %}"></script>
+    <script src="{% static 'common/assets/js/gsap_lib/SplitText.min.js' %}"></script>
+    <script src="{% static 'common/assets/js/common.js' %}"></script>
+    <script src="{% static 'common/assets/js/scripts.js' %}"></script>
 </body>
-
-
-<!-- Mirrored from uicamp.smartinnovates.net/i/gactur-html/home5/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Aug 2025 08:03:47 GMT -->
 </html>

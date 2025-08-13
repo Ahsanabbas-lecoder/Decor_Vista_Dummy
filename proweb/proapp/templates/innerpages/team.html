@@ -4,6 +4,7 @@
 
 <!-- Mirrored from uicamp.smartinnovates.net/i/gactur-html/innerpages/team.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Aug 2025 08:04:17 GMT -->
 <head>
+    {% load static %}
     <!-- Metas -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,10 +38,10 @@
     <link rel="stylesheet" href="../common/assets/css/lib/swiper8.min.css">
 
     <!-- common style -->
-    <link rel="stylesheet" href="../common/assets/css/common_style.css">
+    <link rel="stylesheet" href="{% static '../common/assets/css/common_style.css' %}">
 
     <!-- style -->
-    <link rel="stylesheet" href="../common/assets/css/style.css">
+    <link rel="stylesheet" href="{% static '../common/assets/css/style.css' %}">
 
 </head>
 
@@ -68,9 +69,9 @@
             </ul>
         </div>
         <span class="white-line"></span>
-        <img src="../common/assets/img/contact.png" alt="" class="cube img-cover">
+        <img src="{% static '../common/assets/img/contact.png' %}" alt="" class="cube img-cover">
         <span class="clss"> <i class="fal fa-times"></i> </span>
-        <img src="../common/assets/img/logo_wh.svg" alt="" class="logo">
+        <img src="{% static '../common/assets/img/logo_wh.svg' %}" alt="" class="logo">
     </div>
     <!--  End sidemenu  -->
 
@@ -108,7 +109,7 @@
         <nav class="navbar navbar-expand-lg tc-navbar-st1 bg-111 position-relative">
             <div class="container-fluid">
                 <a class="navbar-brand me-lg-5" href="#">
-                    <img src="assets/img/logo_wh.svg" alt="" class="logo">
+                    <img src="{% static 'assets/img/logo_wh.svg' %}" alt="" class="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -207,7 +208,7 @@
                     <h1 class="title"> Team Page </h1>
                     <div class="info-card">
                         <div class="avatar icon-80 rounded-circle overflow-hidden me-20 flex-shrink-0">
-                            <img src="assets/img/hero1.jpg" alt="" class="img-cover">
+                            <img src="{% static 'assets/img/hero1.jpg' %}" alt="" class="img-cover">
                         </div>
                         <div class="cont">
                             <h6 class="fsz-20 mb-1"> Our company Architect  Firm </h6>
@@ -233,7 +234,7 @@
                                 <div class="team-card">
                                     <a href="#" class="stretched-link"></a>
                                     <div class="img th-450">
-                                        <img src="assets/img/team/1.jpg" alt="" class="img-cover wow clippy-img">
+                                        <img src="{% static 'assets/img/team/1.jpg' %}" alt="" class="img-cover wow clippy-img">
                                         <div class="social-icons">
                                             <a href="#"> <i class="fab fa-facebook-f"></i> </a>
                                             <a href="#"> <i class="fab fa-x-twitter"></i> </a>
@@ -251,7 +252,7 @@
                                 <div class="team-card">
                                     <a href="#" class="stretched-link"></a>
                                     <div class="img th-450">
-                                        <img src="assets/img/team/2.jpg" alt="" class="img-cover wow clippy-img">
+                                        <img src="{% static 'assets/img/team/2.jpg' %}" alt="" class="img-cover wow clippy-img">
                                         <div class="social-icons">
                                             <a href="#"> <i class="fab fa-facebook-f"></i> </a>
                                             <a href="#"> <i class="fab fa-x-twitter"></i> </a>
@@ -269,7 +270,7 @@
                                 <div class="team-card">
                                     <a href="#" class="stretched-link"></a>
                                     <div class="img th-450">
-                                        <img src="assets/img/team/3.jpg" alt="" class="img-cover wow clippy-img">
+                                        <img src="{% static 'assets/img/team/3.jpg' %}" alt="" class="img-cover wow clippy-img">
                                         <div class="social-icons">
                                             <a href="#"> <i class="fab fa-facebook-f"></i> </a>
                                             <a href="#"> <i class="fab fa-x-twitter"></i> </a>
@@ -287,7 +288,7 @@
                                 <div class="team-card">
                                     <a href="#" class="stretched-link"></a>
                                     <div class="img th-450">
-                                        <img src="assets/img/team/4.jpg" alt="" class="img-cover wow clippy-img">
+                                        <img src="{% static 'assets/img/team/4.jpg' %}" alt="" class="img-cover wow clippy-img">
                                         <div class="social-icons">
                                             <a href="#"> <i class="fab fa-facebook-f"></i> </a>
                                             <a href="#"> <i class="fab fa-x-twitter"></i> </a>
@@ -305,7 +306,7 @@
                                 <div class="team-card">
                                     <a href="#" class="stretched-link"></a>
                                     <div class="img th-450">
-                                        <img src="assets/img/team/3.jpg" alt="" class="img-cover wow clippy-img">
+                                        <img src="{% static 'assets/img/team/3.jpg' %}" alt="" class="img-cover wow clippy-img">
                                         <div class="social-icons">
                                             <a href="#"> <i class="fab fa-facebook-f"></i> </a>
                                             <a href="#"> <i class="fab fa-x-twitter"></i> </a>
@@ -323,7 +324,7 @@
                                 <div class="team-card">
                                     <a href="#" class="stretched-link"></a>
                                     <div class="img th-450">
-                                        <img src="assets/img/team/1.jpg" alt="" class="img-cover wow clippy-img">
+                                        <img src="{% static 'assets/img/team/1.jpg' %}" alt="" class="img-cover wow clippy-img">
                                         <div class="social-icons">
                                             <a href="#"> <i class="fab fa-facebook-f"></i> </a>
                                             <a href="#"> <i class="fab fa-x-twitter"></i> </a>

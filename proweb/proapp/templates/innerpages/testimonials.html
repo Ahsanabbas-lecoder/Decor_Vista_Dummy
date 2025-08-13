@@ -4,6 +4,7 @@
 
 <!-- Mirrored from uicamp.smartinnovates.net/i/gactur-html/innerpages/testimonials.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Aug 2025 08:04:17 GMT -->
 <head>
+    {% load static %}
     <!-- Metas -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +17,7 @@
     <title>Gactur</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/img/fav.png" title="Favicon" sizes="16x16">
+    <link rel="shortcut icon" href="{% static 'assets/img/fav.png' %}" title="Favicon" sizes="16x16">
 
     <!-- bootstrap 5 -->
     <link rel="stylesheet" href="../common/assets/css/lib/bootstrap.min.css">
@@ -37,10 +38,10 @@
     <link rel="stylesheet" href="../common/assets/css/lib/swiper8.min.css">
 
     <!-- common style -->
-    <link rel="stylesheet" href="../common/assets/css/common_style.css">
+    <link rel="stylesheet" href="{% static '../common/assets/css/common_style.css' %}">
 
     <!-- style -->
-    <link rel="stylesheet" href="../common/assets/css/style.css">
+    <link rel="stylesheet" href="{% static '../common/assets/css/style.css' %}">
 
 </head>
 
@@ -68,9 +69,9 @@
             </ul>
         </div>
         <span class="white-line"></span>
-        <img src="../common/assets/img/contact.png" alt="" class="cube img-cover">
+        <img src="{% static '../common/assets/img/contact.png' %}" alt="" class="cube img-cover">
         <span class="clss"> <i class="fal fa-times"></i> </span>
-        <img src="../common/assets/img/logo_wh.svg" alt="" class="logo">
+        <img src="{% '../common/assets/img/logo_wh.svg' %}" alt="" class="logo">
     </div>
     <!--  End sidemenu  -->
 
@@ -108,7 +109,7 @@
         <nav class="navbar navbar-expand-lg tc-navbar-st1 bg-111 position-relative">
             <div class="container-fluid">
                 <a class="navbar-brand me-lg-5" href="#">
-                    <img src="assets/img/logo_wh.svg" alt="" class="logo">
+                    <img src="{% static 'assets/img/logo_wh.svg' %}" alt="" class="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -207,7 +208,7 @@
                     <h1 class="title"> Testimonials </h1>
                     <div class="info-card">
                         <div class="avatar icon-80 rounded-circle overflow-hidden me-20 flex-shrink-0">
-                            <img src="assets/img/hero1.jpg" alt="" class="img-cover">
+                            <img src="{% static 'assets/img/hero1.jpg' %}" alt="" class="img-cover">
                         </div>
                         <div class="cont">
                             <h6 class="fsz-20 mb-1"> Our company Architect  Firm </h6>
@@ -249,7 +250,7 @@
                                         <div class="col-lg-8">
                                             <div class="user-wrapper d-flex align-items-center">
                                                 <div class="avatar icon-50 me-4">
-                                                    <img src="assets/img/avatar.jpg" alt="" class="img-cover rounded-circle">
+                                                    <img src="{% static 'assets/img/avatar.jpg' %}" alt="" class="img-cover rounded-circle">
                                                 </div>
                                                 <div class="user-info">
                                                     <div class="txt fsz-16 text-uppercase"> William Andrew </div>
@@ -258,7 +259,7 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-4 mt-5 mt-lg-0 text-lg-end">
-                                            <span class="qt icon-50"> <img src="assets/img/icons/qt.svg" alt="" class="img-contain"> </span>
+                                            <span class="qt icon-50"> <img src="{% static 'assets/img/icons/qt.svg' %}" alt="" class="img-contain"> </span>
                                         </div>
                                     </div>
                                 </div>
@@ -285,7 +286,7 @@
                                         <div class="col-lg-8">
                                             <div class="user-wrapper d-flex align-items-center">
                                                 <div class="avatar icon-50 me-4">
-                                                    <img src="assets/img/avatar.jpg" alt="" class="img-cover rounded-circle">
+                                                    <img src="{% static 'assets/img/avatar.jpg' %}" alt="" class="img-cover rounded-circle">
                                                 </div>
                                                 <div class="user-info">
                                                     <div class="txt fsz-16 text-uppercase"> William Andrew </div>
@@ -294,7 +295,7 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-4 mt-5 mt-lg-0 text-lg-end">
-                                            <span class="qt icon-50"> <img src="assets/img/icons/qt.svg" alt="" class="img-contain"> </span>
+                                            <span class="qt icon-50"> <img src="{% static 'assets/img/icons/qt.svg' %}" alt="" class="img-contain"> </span>
                                         </div>
                                     </div>
                                 </div>
@@ -321,7 +322,7 @@
                                         <div class="col-lg-8">
                                             <div class="user-wrapper d-flex align-items-center">
                                                 <div class="avatar icon-50 me-4">
-                                                    <img src="assets/img/avatar.jpg" alt="" class="img-cover rounded-circle">
+                                                    <img src="{% static 'assets/img/avatar.jpg' %}" alt="" class="img-cover rounded-circle">
                                                 </div>
                                                 <div class="user-info">
                                                     <div class="txt fsz-16 text-uppercase"> William Andrew </div>
@@ -330,7 +331,7 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-4 mt-5 mt-lg-0 text-lg-end">
-                                            <span class="qt icon-50"> <img src="assets/img/icons/qt.svg" alt="" class="img-contain"> </span>
+                                            <span class="qt icon-50"> <img src="{% static 'assets/img/icons/qt.svg' %}" alt="" class="img-contain"> </span>
                                         </div>
                                     </div>
                                 </div>
@@ -357,7 +358,7 @@
                                         <div class="col-lg-8">
                                             <div class="user-wrapper d-flex align-items-center">
                                                 <div class="avatar icon-50 me-4">
-                                                    <img src="assets/img/avatar.jpg" alt="" class="img-cover rounded-circle">
+                                                    <img src="{% static 'assets/img/avatar.jpg' %}" alt="" class="img-cover rounded-circle">
                                                 </div>
                                                 <div class="user-info">
                                                     <div class="txt fsz-16 text-uppercase"> William Andrew </div>
@@ -366,7 +367,7 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-4 mt-5 mt-lg-0 text-lg-end">
-                                            <span class="qt icon-50"> <img src="assets/img/icons/qt.svg" alt="" class="img-contain"> </span>
+                                            <span class="qt icon-50"> <img src="{% static 'assets/img/icons/qt.svg' %}" alt="" class="img-contain"> </span>
                                         </div>
                                     </div>
                                 </div>
@@ -393,7 +394,7 @@
                                         <div class="col-lg-8">
                                             <div class="user-wrapper d-flex align-items-center">
                                                 <div class="avatar icon-50 me-4">
-                                                    <img src="assets/img/avatar.jpg" alt="" class="img-cover rounded-circle">
+                                                    <img src="{% static 'assets/img/avatar.jpg' %}" alt="" class="img-cover rounded-circle">
                                                 </div>
                                                 <div class="user-info">
                                                     <div class="txt fsz-16 text-uppercase"> William Andrew </div>
@@ -402,7 +403,7 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-4 mt-5 mt-lg-0 text-lg-end">
-                                            <span class="qt icon-50"> <img src="assets/img/icons/qt.svg" alt="" class="img-contain"> </span>
+                                            <span class="qt icon-50"> <img src="{% static 'assets/img/icons/qt.svg' %}" alt="" class="img-contain"> </span>
                                         </div>
                                     </div>
                                 </div>
@@ -429,7 +430,7 @@
                                         <div class="col-lg-8">
                                             <div class="user-wrapper d-flex align-items-center">
                                                 <div class="avatar icon-50 me-4">
-                                                    <img src="assets/img/avatar.jpg" alt="" class="img-cover rounded-circle">
+                                                    <img src="{% static 'assets/img/avatar.jpg' %}" alt="" class="img-cover rounded-circle">
                                                 </div>
                                                 <div class="user-info">
                                                     <div class="txt fsz-16 text-uppercase"> William Andrew </div>
@@ -438,7 +439,7 @@
                                             </div>
                                         </div>
                                         <div class="col-lg-4 mt-5 mt-lg-0 text-lg-end">
-                                            <span class="qt icon-50"> <img src="assets/img/icons/qt.svg" alt="" class="img-contain"> </span>
+                                            <span class="qt icon-50"> <img src="{% static 'assets/img/icons/qt.svg' %}" alt="" class="img-contain"> </span>
                                         </div>
                                     </div>
                                 </div>
@@ -457,22 +458,22 @@
                         <div class="row">
                             <div class="col-lg-3 col-6">
                                 <a href="#" class="img wow fadeInUp slow" data-wow-delay="0.1s">
-                                    <img src="assets/img/insta/1.jpg" alt="" class="img-cover wow clippy-img">
+                                    <img src="{% static 'assets/img/insta/1.jpg' %}" alt="" class="img-cover wow clippy-img">
                                 </a>
                             </div>
                             <div class="col-lg-3 col-6">
                                 <a href="#" class="img wow fadeInUp slow" data-wow-delay="0.2s">
-                                    <img src="assets/img/insta/2.jpg" alt="" class="img-cover wow clippy-img">
+                                    <img src="{% static 'assets/img/insta/2.jpg' %}" alt="" class="img-cover wow clippy-img">
                                 </a>
                             </div>
                             <div class="col-lg-3 col-6">
                                 <a href="#" class="img wow fadeInUp slow" data-wow-delay="0.3s">
-                                    <img src="assets/img/insta/3.jpg" alt="" class="img-cover wow clippy-img">
+                                    <img src="{% static 'assets/img/insta/3.jpg' %}" alt="" class="img-cover wow clippy-img">
                                 </a>
                             </div>
                             <div class="col-lg-3 col-6">
                                 <a href="#" class="img wow fadeInUp slow" data-wow-delay="0.4s">
-                                    <img src="assets/img/insta/4.jpg" alt="" class="img-cover wow clippy-img">
+                                    <img src="{% static 'assets/img/insta/4.jpg' %}" alt="" class="img-cover wow clippy-img">
                                 </a>
                             </div>
                         </div>

@@ -4,6 +4,7 @@
 
 <!-- Mirrored from uicamp.smartinnovates.net/i/gactur-html/innerpages/faq.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Aug 2025 08:04:07 GMT -->
 <head>
+    {% load static %}
     <!-- Metas -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,10 +38,10 @@
     <link rel="stylesheet" href="../common/assets/css/lib/swiper8.min.css">
 
     <!-- common style -->
-    <link rel="stylesheet" href="../common/assets/css/common_style.css">
+    <link rel="stylesheet" href="{% static '../common/assets/css/common_style.css' %}">
 
     <!-- style -->
-    <link rel="stylesheet" href="../common/assets/css/style.css">
+    <link rel="stylesheet" href="{% static '../common/assets/css/style.css' %}">
 
 </head>
 
@@ -68,9 +69,9 @@
             </ul>
         </div>
         <span class="white-line"></span>
-        <img src="../common/assets/img/contact.png" alt="" class="cube img-cover">
+        <img src="{% static '../common/assets/img/contact.png' %}" alt="" class="cube img-cover">
         <span class="clss"> <i class="fal fa-times"></i> </span>
-        <img src="../common/assets/img/logo_wh.svg" alt="" class="logo">
+        <img src="{% static '../common/assets/img/logo_wh.svg' %}" alt="" class="logo">
     </div>
     <!--  End sidemenu  -->
 
@@ -108,7 +109,7 @@
         <nav class="navbar navbar-expand-lg tc-navbar-st1 bg-111 position-relative">
             <div class="container-fluid">
                 <a class="navbar-brand me-lg-5" href="#">
-                    <img src="assets/img/logo_wh.svg" alt="" class="logo">
+                    <img src="{% static 'assets/img/logo_wh.svg' %}" alt="" class="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -207,7 +208,7 @@
                     <h1 class="title"> Faq Page </h1>
                     <div class="info-card">
                         <div class="avatar icon-80 rounded-circle overflow-hidden me-20 flex-shrink-0">
-                            <img src="assets/img/hero1.jpg" alt="" class="img-cover">
+                            <img src="{% static 'assets/img/hero1.jpg' %}" alt="" class="img-cover">
                         </div>
                         <div class="cont">
                             <h6 class="fsz-20 mb-1"> Our company Architect  Firm </h6>
@@ -232,7 +233,7 @@
                             <div class="col-lg-6">
                                 <div class="title-wrapper mb-50">
                                     <div class="section-head-st1 mb-30 js-splittext-lines">
-                                        <h6 class="fsz-20 cr-gold1 mb-15"> <span class="icon-20 me-1"> <img src="assets/img/fav_gold.svg" alt="">
+                                        <h6 class="fsz-20 cr-gold1 mb-15"> <span class="icon-20 me-1"> <img src="{% static 'assets/img/fav_gold.svg' %}" alt="">
                                             </span> Our Frequency </h6>
                                         <h2 class="fsz-50"> General Questions </h2>
                                     </div>
@@ -305,12 +306,12 @@
                                     <div class="row">
                                         <div class="col-6">
                                             <div class="img th-600">
-                                                <img src="assets/img/faq1.jpg" alt="" class="img-cover wow clippy-img">
+                                                <img src="{% static 'assets/img/faq1.jpg' %}" alt="" class="img-cover wow clippy-img">
                                             </div>
                                         </div>
                                         <div class="col-6">
                                             <div class="img th-600">
-                                                <img src="assets/img/faq2.jpg" alt="" class="img-cover wow clippy-img">
+                                                <img src="{% static 'assets/img/faq2.jpg' %}" alt="" class="img-cover wow clippy-img">
                                             </div>
                                         </div>
                                     </div>
@@ -331,42 +332,42 @@
                         <div class="row gx-0">
                             <div class="col-lg-3 col-6">
                                 <a href="#" class="item">
-                                    <img src="assets/img/brands/1.svg" alt="">
+                                    <img src="{% static 'assets/img/brands/1.svg' %}" alt="">
                                 </a>
                             </div>
                             <div class="col-lg-3 col-6">
                                 <a href="#" class="item">
-                                    <img src="assets/img/brands/2.svg" alt="">
+                                    <img src="{% static 'assets/img/brands/2.svg' %}" alt="">
                                 </a>
                             </div>
                             <div class="col-lg-3 col-6">
                                 <a href="#" class="item">
-                                    <img src="assets/img/brands/3.svg" alt="">
+                                    <img src="{% static 'assets/img/brands/3.svg' %}" alt="">
                                 </a>
                             </div>
                             <div class="col-lg-3 col-6">
                                 <a href="#" class="item">
-                                    <img src="assets/img/brands/4.svg" alt="">
+                                    <img src="{% static 'assets/img/brands/4.svg' %}" alt="">
                                 </a>
                             </div>
                             <div class="col-lg-3 col-6">
                                 <a href="#" class="item">
-                                    <img src="assets/img/brands/5.svg" alt="">
+                                    <img src="{% static 'assets/img/brands/5.svg' %}" alt="">
                                 </a>
                             </div>
                             <div class="col-lg-3 col-6">
                                 <a href="#" class="item">
-                                    <img src="assets/img/brands/6.svg" alt="">
+                                    <img src="{% static 'assets/img/brands/6.svg' %}" alt="">
                                 </a>
                             </div>
                             <div class="col-lg-3 col-6">
                                 <a href="#" class="item">
-                                    <img src="assets/img/brands/1.svg" alt="">
+                                    <img src="{% static 'assets/img/brands/1.svg' %}" alt="">
                                 </a>
                             </div>
                             <div class="col-lg-3 col-6">
                                 <a href="#" class="item">
-                                    <img src="assets/img/brands/2.svg" alt="">
+                                    <img src="{% static 'assets/img/brands/2.svg' %}" alt="">
                                 </a>
                             </div>
                         </div>

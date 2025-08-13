@@ -5,6 +5,7 @@
 <!-- Mirrored from uicamp.smartinnovates.net/i/gactur-html/innerpages/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Aug 2025 08:04:00 GMT -->
 <head>
     <!-- Metas -->
+    {% load static %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -37,10 +38,10 @@
     <link rel="stylesheet" href="../common/assets/css/lib/swiper8.min.css">
 
     <!-- common style -->
-    <link rel="stylesheet" href="../common/assets/css/common_style.css">
+    <link rel="stylesheet" href="{% static '../common/assets/css/common_style.css' %}">
 
     <!-- style -->
-    <link rel="stylesheet" href="../common/assets/css/style.css">
+    <link rel="stylesheet" href="{% static '../common/assets/css/style.css' %}">
 
 </head>
 
@@ -68,9 +69,9 @@
             </ul>
         </div>
         <span class="white-line"></span>
-        <img src="../common/assets/img/contact.png" alt="" class="cube img-cover">
+        <img src="{% static '../common/assets/img/contact.png' %}" alt="" class="cube img-cover">
         <span class="clss"> <i class="fal fa-times"></i> </span>
-        <img src="../common/assets/img/logo_wh.svg" alt="" class="logo">
+        <img src="{% static '../common/assets/img/logo_wh.svg' %}" alt="" class="logo">
     </div>
     <!--  End sidemenu  -->
 
@@ -108,7 +109,7 @@
         <nav class="navbar navbar-expand-lg tc-navbar-st1 bg-111 position-relative">
             <div class="container-fluid">
                 <a class="navbar-brand me-lg-5" href="#">
-                    <img src="assets/img/logo_wh.svg" alt="" class="logo">
+                    <img src="{% static 'assets/img/logo_wh.svg' %}" alt="" class="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -207,7 +208,7 @@
                     <h1 class="title"> Blog Page </h1>
                     <div class="info-card">
                         <div class="avatar icon-80 rounded-circle overflow-hidden me-20 flex-shrink-0">
-                            <img src="assets/img/hero1.jpg" alt="" class="img-cover">
+                            <img src="{% static 'assets/img/hero1.jpg' %}" alt="" class="img-cover">
                         </div>
                         <div class="cont">
                             <h6 class="fsz-20 mb-1"> Our company Architect  Firm </h6>
@@ -232,7 +233,7 @@
                             <a href="#" class="post-card bg-dark1 mb-30">
                                 <div class="img">
                                     <span class="date"> Nov 25, 2024 </span>
-                                    <img src="assets/img/blog/1.jpg" alt="" class="img-cover">
+                                    <img src="{% static 'assets/img/blog/1.jpg' %}" alt="" class="img-cover">
                                 </div>
                                 <div class="info p-4">
                                     <h6 class="title fsz-24"> The Intersection of Art and Function Exploring </h6>
@@ -244,7 +245,7 @@
                             <a href="#" class="post-card bg-dark1 mb-30">
                                 <div class="img">
                                     <span class="date"> Nov 25, 2024 </span>
-                                    <img src="assets/img/blog/2.jpg" alt="" class="img-cover">
+                                    <img src="{% static 'assets/img/blog/2.jpg' %}" alt="" class="img-cover">
                                 </div>
                                 <div class="info p-4">
                                     <h6 class="title fsz-24"> The Intersection of Art and Function Exploring </h6>
@@ -256,7 +257,7 @@
                             <a href="#" class="post-card bg-dark1 mb-30">
                                 <div class="img">
                                     <span class="date"> Nov 25, 2024 </span>
-                                    <img src="assets/img/blog/3.jpg" alt="" class="img-cover">
+                                    <img src="{% static 'assets/img/blog/3.jpg' %}" alt="" class="img-cover">
                                 </div>
                                 <div class="info p-4">
                                     <h6 class="title fsz-24"> The Intersection of Art and Function Exploring </h6>
@@ -268,7 +269,7 @@
                             <a href="#" class="post-card bg-dark1 mb-30">
                                 <div class="img">
                                     <span class="date"> Nov 25, 2024 </span>
-                                    <img src="assets/img/blog/4.jpg" alt="" class="img-cover">
+                                    <img src="{% static 'assets/img/blog/4.jpg' %}" alt="" class="img-cover">
                                 </div>
                                 <div class="info p-4">
                                     <h6 class="title fsz-24"> The Intersection of Art and Function Exploring </h6>
@@ -280,7 +281,7 @@
                             <a href="#" class="post-card bg-dark1 mb-30">
                                 <div class="img">
                                     <span class="date"> Nov 25, 2024 </span>
-                                    <img src="assets/img/blog/5.jpg" alt="" class="img-cover">
+                                    <img src="{% static 'assets/img/blog/5.jpg' %}" alt="" class="img-cover">
                                 </div>
                                 <div class="info p-4">
                                     <h6 class="title fsz-24"> The Intersection of Art and Function Exploring </h6>
@@ -292,7 +293,7 @@
                             <a href="#" class="post-card bg-dark1 mb-30">
                                 <div class="img">
                                     <span class="date"> Nov 25, 2024 </span>
-                                    <img src="assets/img/blog/6.jpg" alt="" class="img-cover">
+                                    <img src="{% static 'assets/img/blog/6.jpg' %}" alt="" class="img-cover">
                                 </div>
                                 <div class="info p-4">
                                     <h6 class="title fsz-24"> The Intersection of Art and Function Exploring </h6>
@@ -304,7 +305,7 @@
                             <a href="#" class="post-card bg-dark1 mb-30">
                                 <div class="img">
                                     <span class="date"> Nov 25, 2024 </span>
-                                    <img src="assets/img/blog/7.jpg" alt="" class="img-cover">
+                                    <img src="{% static 'assets/img/blog/7.jpg' %}" alt="" class="img-cover">
                                 </div>
                                 <div class="info p-4">
                                     <h6 class="title fsz-24"> The Intersection of Art and Function Exploring </h6>
@@ -316,7 +317,7 @@
                             <a href="#" class="post-card bg-dark1 mb-30">
                                 <div class="img">
                                     <span class="date"> Nov 25, 2024 </span>
-                                    <img src="assets/img/blog/8.jpg" alt="" class="img-cover">
+                                    <img src="{% static 'assets/img/blog/8.jpg' %}" alt="" class="img-cover">
                                 </div>
                                 <div class="info p-4">
                                     <h6 class="title fsz-24"> The Intersection of Art and Function Exploring </h6>
@@ -328,7 +329,7 @@
                             <a href="#" class="post-card bg-dark1 mb-30">
                                 <div class="img">
                                     <span class="date"> Nov 25, 2024 </span>
-                                    <img src="assets/img/blog/9.jpg" alt="" class="img-cover">
+                                    <img src="{% static 'assets/img/blog/9.jpg' %}" alt="" class="img-cover">
                                 </div>
                                 <div class="info p-4">
                                     <h6 class="title fsz-24"> The Intersection of Art and Function Exploring </h6>
@@ -355,22 +356,22 @@
                     <div class="sm-title col-lg-7 mx-auto"> <span class="txt"> Our Website <span class="cr-gold1"> 75000+ </span> VIP Customer </span> </div>
                     <div class="brands">
                         <a href="#" class="brand wow fadeInUp slow" data-wow-delay="0.1s">
-                            <img src="assets/img/brands/1.svg" alt="">
+                            <img src="{% static 'assets/img/brands/1.svg' %}" alt="">
                         </a>
                         <a href="#" class="brand wow fadeInUp slow" data-wow-delay="0.2s">
-                            <img src="assets/img/brands/2.svg" alt="">
+                            <img src="{% static 'assets/img/brands/2.svg' %}" alt="">
                         </a>
                         <a href="#" class="brand wow fadeInUp slow" data-wow-delay="0.3s">
-                            <img src="assets/img/brands/3.svg" alt="">
+                            <img src="{% static 'assets/img/brands/3.svg' %}" alt="">
                         </a>
                         <a href="#" class="brand wow fadeInUp slow" data-wow-delay="0.4s">
-                            <img src="assets/img/brands/4.svg" alt="">
+                            <img src="{% static 'assets/img/brands/4.svg' %}" alt="">
                         </a>
                         <a href="#" class="brand wow fadeInUp slow" data-wow-delay="0.5s">
-                            <img src="assets/img/brands/5.svg" alt="">
+                            <img src="{% static 'assets/img/brands/5.svg' %}" alt="">
                         </a>
                         <a href="#" class="brand wow fadeInUp slow" data-wow-delay="0.6s">
-                            <img src="assets/img/brands/6.svg" alt="">
+                            <img src="{% static 'assets/img/brands/6.svg' %}" alt="">
                         </a>
                     </div>
                 </div>

@@ -4,6 +4,7 @@
 
 <!-- Mirrored from uicamp.smartinnovates.net/i/gactur-html/innerpages/services2.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Aug 2025 08:04:15 GMT -->
 <head>
+    {% load static %}
     <!-- Metas -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,10 +38,10 @@
     <link rel="stylesheet" href="../common/assets/css/lib/swiper8.min.css">
 
     <!-- common style -->
-    <link rel="stylesheet" href="../common/assets/css/common_style.css">
+    <link rel="stylesheet" href="{% static '../common/assets/css/common_style.css' %}">
 
     <!-- style -->
-    <link rel="stylesheet" href="../common/assets/css/style.css">
+    <link rel="stylesheet" href="{% staic '../common/assets/css/style.css' %}">
 
 </head>
 
@@ -68,9 +69,9 @@
             </ul>
         </div>
         <span class="white-line"></span>
-        <img src="../common/assets/img/contact.png" alt="" class="cube img-cover">
+        <img src="{% static '../common/assets/img/contact.png' %}" alt="" class="cube img-cover">
         <span class="clss"> <i class="fal fa-times"></i> </span>
-        <img src="../common/assets/img/logo_wh.svg" alt="" class="logo">
+        <img src="{% static '../common/assets/img/logo_wh.svg' %}" alt="" class="logo">
     </div>
     <!--  End sidemenu  -->
 
@@ -108,7 +109,7 @@
         <nav class="navbar navbar-expand-lg tc-navbar-st1 bg-111 position-relative">
             <div class="container-fluid">
                 <a class="navbar-brand me-lg-5" href="#">
-                    <img src="assets/img/logo_wh.svg" alt="" class="logo">
+                    <img src="{% static 'assets/img/logo_wh.svg' %}" alt="" class="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -207,7 +208,7 @@
                     <h1 class="title"> Service Page </h1>
                     <div class="info-card">
                         <div class="avatar icon-80 rounded-circle overflow-hidden me-20 flex-shrink-0">
-                            <img src="assets/img/hero1.jpg" alt="" class="img-cover">
+                            <img src="{% static 'assets/img/hero1.jpg' %}" alt="" class="img-cover">
                         </div>
                         <div class="cont">
                             <h6 class="fsz-20 mb-1"> Our company Architect  Firm </h6>
@@ -231,16 +232,16 @@
                         <div class="row justify-content-between">
                             <div class="col-lg-7">
                                 <div class="section-head-st1 mb-30 js-splittext-lines pe-lg-5">
-                                    <h6 class="fsz-20 cr-gold1 mb-15"> <span class="icon-20 me-1"> <img src="assets/img/fav_gold.svg" alt=""> </span> Gactour feature </h6>
+                                    <h6 class="fsz-20 cr-gold1 mb-15"> <span class="icon-20 me-1"> <img src="{% static 'assets/img/fav_gold.svg' %}" alt=""> </span> Gactour feature </h6>
                                     <h2 class="fsz-50"> Trends and Innovations </h2>
                                     <div class="text fsz-16 cr-999"> It seems like you're asking for ideas or information on creating a title related to architecture. Could you specify the context? For example, are you looking. </div>
-                                    <a href="#" class="butn border brd-light hover-bg-gold1 rounded-pill px-4 mt-30"> <span> View All <img src="assets/img/t-arrow.svg" alt="" class="t-arrow ms-1"> </span> </a>
+                                    <a href="#" class="butn border brd-light hover-bg-gold1 rounded-pill px-4 mt-30"> <span> View All <img src="{% static 'assets/img/t-arrow.svg' %}" alt="" class="t-arrow ms-1"> </span> </a>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <a href="#" class="feat-card mt-0 wow fadeInUp slow" data-wow-delay="0.1s">
                                     <div class="icon icon-90 mb-60">
-                                        <img src="assets/img/icons/ft1.svg" alt="">
+                                        <img src="{% static 'assets/img/icons/ft1.svg' %}" alt="">
                                     </div>
                                     <div class="info">
                                         <h6 class="fsz-24 mb-10"> Sustainable Architecture </h6>
@@ -255,7 +256,7 @@
                             <div class="col-lg-4">
                                 <a href="#" class="feat-card wow fadeInUp slow" data-wow-delay="0.2s">
                                     <div class="icon icon-90 mb-60">
-                                        <img src="assets/img/icons/ft2.svg" alt="">
+                                        <img src="{% static 'assets/img/icons/ft2.svg' %}" alt="">
                                     </div>
                                     <div class="info">
                                         <h6 class="fsz-24 mb-10"> Innovative Construction </h6>
@@ -266,7 +267,7 @@
                             <div class="col-lg-4">
                                 <a href="#" class="feat-card wow fadeInUp slow" data-wow-delay="0.3s">
                                     <div class="icon icon-90 mb-60">
-                                        <img src="assets/img/icons/ft3.svg" alt="">
+                                        <img src="{% static 'assets/img/icons/ft3.svg' %}" alt="">
                                     </div>
                                     <div class="info">
                                         <h6 class="fsz-24 mb-10"> Biophilic Design </h6>
@@ -277,7 +278,7 @@
                             <div class="col-lg-4">
                                 <a href="#" class="feat-card wow fadeInUp slow" data-wow-delay="0.4s">
                                     <div class="icon icon-90 mb-60">
-                                        <img src="assets/img/icons/ft4.svg" alt="">
+                                        <img src="{% static 'assets/img/icons/ft4.svg' %}" alt="">
                                     </div>
                                     <div class="info">
                                         <h6 class="fsz-24 mb-10"> Urban Planning </h6>
@@ -304,7 +305,7 @@
                     <div class="row gx-0">
                         <div class="col-lg-5">
                             <div class="img wow zoomIn slow" data-wow-delay="0.1s">
-                                <img src="assets/img/service-1.jpg" alt="" class="img-cover">
+                                <img src="{% static 'assets/img/service-1.jpg' %}" alt="" class="img-cover">
                             </div>
                         </div>
                         <div class="col-lg-7">
@@ -314,7 +315,7 @@
                                 <div class="service-cards wow fadeInUp slow" data-wow-delay="0.1s">
                                     <div class="service-card">
                                         <div class="icon">
-                                            <img src="assets/img/icons/ser1.svg" alt="">
+                                            <img src="{% static 'assets/img/icons/ser1.svg' %}" alt="">
                                         </div>
                                         <div class="cont">
                                             <h5 class="fsz-30 mb-15"> Architectural Design </h5>
@@ -323,7 +324,7 @@
                                     </div>
                                     <div class="service-card">
                                         <div class="icon">
-                                            <img src="assets/img/icons/ser2.svg" alt="">
+                                            <img src="{% static 'assets/img/icons/ser2.svg' %}" alt="">
                                         </div>
                                         <div class="cont">
                                             <h5 class="fsz-30 mb-15"> Landscape Design </h5>
@@ -332,7 +333,7 @@
                                     </div>
                                     <div class="service-card">
                                         <div class="icon">
-                                            <img src="assets/img/icons/ser3.svg" alt="">
+                                            <img src="{% static 'assets/img/icons/ser3.svg' %}" alt="">
                                         </div>
                                         <div class="cont">
                                             <h5 class="fsz-30 mb-15"> 3D Architect Design </h5>
@@ -352,7 +353,7 @@
             <section class="tc-video-st3" data-lity="video">
                 <a href="https://www.youtube.com/watch?v=qYgdnM3BC3g" class="d-block float-cursor-container">
                     <div class="float-cursor"> Play Videos </div>
-                    <img src="assets/img/vid_img.jpg" alt="" class="bg img-cover">
+                    <img src="{% static 'assets/img/vid_img.jpg' %}" alt="" class="bg img-cover">
                 </a>
             </section>
             <!--  End video  -->
@@ -385,7 +386,7 @@
                                             <div class="col-lg-8">
                                                 <div class="user-wrapper d-flex align-items-center">
                                                     <div class="avatar icon-50 me-4">
-                                                        <img src="assets/img/avatar.jpg" alt="" class="img-cover rounded-circle">
+                                                        <img src="{% static 'assets/img/avatar.jpg' %}" alt="" class="img-cover rounded-circle">
                                                     </div>
                                                     <div class="user-info">
                                                         <div class="txt fsz-16 text-uppercase"> William Andrew </div>
@@ -394,7 +395,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-lg-4 mt-5 mt-lg-0 text-lg-end">
-                                                <span class="qt icon-50"> <img src="assets/img/icons/qt.svg" alt="" class="img-contain"> </span>
+                                                <span class="qt icon-50"> <img src="{% static 'assets/img/icons/qt.svg' %}" alt="" class="img-contain"> </span>
                                             </div>
                                         </div>
                                     </div>
@@ -421,7 +422,7 @@
                                             <div class="col-lg-8">
                                                 <div class="user-wrapper d-flex align-items-center">
                                                     <div class="avatar icon-50 me-4">
-                                                        <img src="assets/img/avatar.jpg" alt="" class="img-cover rounded-circle">
+                                                        <img src="{% static 'assets/img/avatar.jpg' %}" alt="" class="img-cover rounded-circle">
                                                     </div>
                                                     <div class="user-info">
                                                         <div class="txt fsz-16 text-uppercase"> William Andrew </div>
@@ -430,7 +431,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-lg-4 mt-5 mt-lg-0 text-lg-end">
-                                                <span class="qt icon-50"> <img src="assets/img/icons/qt.svg" alt="" class="img-contain"> </span>
+                                                <span class="qt icon-50"> <img src="{% static 'assets/img/icons/qt.svg' %}" alt="" class="img-contain"> </span>
                                             </div>
                                         </div>
                                     </div>

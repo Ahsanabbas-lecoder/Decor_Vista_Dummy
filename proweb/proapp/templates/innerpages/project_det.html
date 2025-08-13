@@ -4,6 +4,7 @@
 
 <!-- Mirrored from uicamp.smartinnovates.net/i/gactur-html/innerpages/project_det.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 Aug 2025 08:04:08 GMT -->
 <head>
+    {% load static %}
     <!-- Metas -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,10 +38,10 @@
     <link rel="stylesheet" href="../common/assets/css/lib/swiper8.min.css">
 
     <!-- common style -->
-    <link rel="stylesheet" href="../common/assets/css/common_style.css">
+    <link rel="stylesheet" href="{% static '../common/assets/css/common_style.css' %}">
 
     <!-- style -->
-    <link rel="stylesheet" href="../common/assets/css/style.css">
+    <link rel="stylesheet" href="{% static '../common/assets/css/style.css' %}">
 
 </head>
 
@@ -68,9 +69,9 @@
             </ul>
         </div>
         <span class="white-line"></span>
-        <img src="../common/assets/img/contact.png" alt="" class="cube img-cover">
+        <img src="{% static '../common/assets/img/contact.png' %}" alt="" class="cube img-cover">
         <span class="clss"> <i class="fal fa-times"></i> </span>
-        <img src="../common/assets/img/logo_wh.svg" alt="" class="logo">
+        <img src="{% static '../common/assets/img/logo_wh.svg' %}" alt="" class="logo">
     </div>
     <!--  End sidemenu  -->
 
@@ -108,7 +109,7 @@
         <nav class="navbar navbar-expand-lg tc-navbar-st1 navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand me-lg-5" href="#">
-                    <img src="assets/img/logo_wh.svg" alt="" class="logo">
+                    <img src="{% static 'assets/img/logo_wh.svg' %}" alt="" class="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -206,7 +207,7 @@
                     <h1 class="title"> Interior Design </h1>
                     <div class="info-card">
                         <div class="avatar icon-80 rounded-circle overflow-hidden me-20 flex-shrink-0">
-                            <img src="assets/img/hero1.jpg" alt="" class="img-cover">
+                            <img src="{% static 'assets/img/hero1.jpg' %}" alt="" class="img-cover">
                         </div>
                         <div class="cont">
                             <h6 class="fsz-20 mb-1"> Our company Architect  Firm </h6>
@@ -219,7 +220,7 @@
                     </div>
                 </div>
                 <div class="lines-st2"><span></span><span></span></div>
-                <img src="assets/img/portfolio_head.jpg" alt="" class="bg">
+                <img src="{% static 'assets/img/portfolio_head.jpg' %}" alt="" class="bg">
             </section>
             <!--  End innerheader  -->
 
@@ -235,7 +236,7 @@
                                 <div class="text fsz-16 cr-999"> Our interior design services offer a comprehensive approach to transforming spaces into functional, aesthetically pleasing environments. We begin with an in-depth consultation to understand your vision and needs, followed by concept development, where we create detailed design plans. </div>
                                 <div class="main-txt fsz-20 cr-gold1 mt-30"> "Interior Design Schemes Developing cohesive design plans, including color schemes, textures, and patterns functional needs." </div>
                                 <div class="img th-250 mt-60">
-                                    <img src="assets/img/portfolio/9.jpg" alt="" class="img-cover wow clippy-img">
+                                    <img src="{% static 'assets/img/portfolio/9.jpg' %}" alt="" class="img-cover wow clippy-img">
                                 </div>
                                 <h6 class="sub-title fsz-24 text-uppercase mb-20 mt-60"> Advantages </h6>
                                 <div class="text fsz-16 cr-999 mb-20"> Using 3D renderings, we provide realistic visualizations, ensuring you're confident in the design before implementation. Our project management team oversees every aspect, from budget and timeline management to procurement and installation. We also specialize in bespoke designs, customizing furniture and décor to perfectly suit your space. </div>
@@ -243,12 +244,12 @@
                                     <div class="row">
                                         <div class="col-lg-6">
                                             <div class="img th-400 mb-4 mb-lg-0">
-                                                <img src="assets/img/portfolio/10.jpg" alt="" class="img-cover wow clippy-img">
+                                                <img src="{% static 'assets/img/portfolio/10.jpg' %}" alt="" class="img-cover wow clippy-img">
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="img th-400 mb-4 mb-lg-0">
-                                                <img src="assets/img/portfolio/11.jpg" alt="" class="img-cover wow clippy-img">
+                                                <img src="{% static 'assets/img/portfolio/11.jpg' %}" alt="" class="img-cover wow clippy-img">
                                             </div>
                                         </div>
                                     </div>
@@ -316,7 +317,7 @@
                 <div class="container">
                     <div class="title-wrapper mb-80">
                         <div class="section-head-st1 mb-30 js-splittext-lines">
-                            <h6 class="fsz-20 cr-gold1 mb-15"> <span class="icon-20 me-1"> <img src="assets/img/fav_gold.svg" alt=""> </span> Our Portfolio </h6>
+                            <h6 class="fsz-20 cr-gold1 mb-15"> <span class="icon-20 me-1"> <img src="{% static 'assets/img/fav_gold.svg' %}" alt=""> </span> Our Portfolio </h6>
                             <h2 class="fsz-50"> Showcasing Our Architectural </h2>
                         </div>
                     </div>
@@ -325,7 +326,7 @@
                             <div class="swiper-slide">
                                 <a href="#" class="portfolio-card">
                                     <div class="img">
-                                        <img src="assets/img/portfolio/1.jpg" alt="" class="img-cover">
+                                        <img src="{% static 'assets/img/portfolio/1.jpg' %}" alt="" class="img-cover">
                                     </div>
                                     <div class="info">
                                         <div class="tags">
@@ -340,7 +341,7 @@
                             <div class="swiper-slide">
                                 <a href="#" class="portfolio-card">
                                     <div class="img">
-                                        <img src="assets/img/portfolio/2.jpg" alt="" class="img-cover">
+                                        <img src="{% static 'assets/img/portfolio/2.jpg' %}" alt="" class="img-cover">
                                     </div>
                                     <div class="info">
                                         <div class="tags">
@@ -355,7 +356,7 @@
                             <div class="swiper-slide">
                                 <a href="#" class="portfolio-card">
                                     <div class="img">
-                                        <img src="assets/img/portfolio/3.jpg" alt="" class="img-cover">
+                                        <img src="{% static 'assets/img/portfolio/3.jpg' %}" alt="" class="img-cover">
                                     </div>
                                     <div class="info">
                                         <div class="tags">
@@ -370,7 +371,7 @@
                             <div class="swiper-slide">
                                 <a href="#" class="portfolio-card">
                                     <div class="img">
-                                        <img src="assets/img/portfolio/2.jpg" alt="" class="img-cover">
+                                        <img src="{% static 'assets/img/portfolio/2.jpg' %}" alt="" class="img-cover">
                                     </div>
                                     <div class="info">
                                         <div class="tags">
